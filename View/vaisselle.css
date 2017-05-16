@@ -15,13 +15,13 @@ body {
 
 .buttonVaisselle {
 display: inline-block;
-border-radius: 10px;
+border-radius: 5%;
 background-color: #f4511e;
 border: none;
 color: #FFFFFF;
 text-align: center;
-font-size: 28px;
-padding: 20px;
+font-size: 28%;
+padding: 10%;
 width: 30%;
 transition: all 0.5s;
 cursor: pointer;
@@ -45,7 +45,7 @@ transition: 0.5s;
 }
 
 .buttonVaisselle:hover span {
-padding-right: 5%;
+padding-right: 2%;
 }
 
 .buttonVaisselle:hover span:after {
