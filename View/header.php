@@ -16,18 +16,12 @@
   </head>
 
   <header><!-- En-tête du site -->
-  <table> <!-- Menu -->
-    <tr> <!-- 1 seule ligne / 8 colonnes -->
 
-      <td><span id="active"><a href="index.htm">Accueil</a></espan></td>
-
-      <td><a href="#">Offre de Vaisselle</a></td>
-
-      <td><a href="#">Postez votre annonce</a></td>
-
-      <td><a href="annexes.htm">A propos</a></td>
-
-    </tr>
-  </table>
+  <ul class="topnav">
+    <li><a class="active" href="#home">Accueil</a></li>
+    <li><a href="#news">Offre de Vaisselle</a></li>
+    <li><a href="#contact">Postez une annonce</a></li>
+    <li class="right"><a href="#about">A propos</a></li>
+  </ul>
 </header>
 </html>

@@ -64,40 +64,36 @@ right: 0;
 }
 
 
-
-header
-{
-	width: 100%;
-	height: 120px; /* Le bloc fait 130 pixels de hauteur */
-	background-color: orange;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
 }
 
-header table /* On touche le tableau du menu dans le header */
-{
-	float: right; /* "Flotte" à droite */
-	margin-top: 10%; /* Décalage du haut de 80 pixels (partie EXTERIEURE du bloc) */
-	padding-right: 10%;
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-header table a
-{
-	text-decoration: none; /* Enlever les décoration des liens (souligné)*/
-	color: white;
-	font-family: Verdana;
-	font-size: 2em;
-	padding-right: 10%;
-}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-header table #active a
-{
-	color: #FFD700;
-}
+ul.topnav li a.active {background-color: #4CAF50;}
 
-header table a:hover /* Quand le liens est survolé avec le curseur */
-{
-	color: yellow;
-}
+ul.topnav li.right {float: right;}
 
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+/* footer
+ */
 
 footer
 {
