@@ -97,3 +97,30 @@ header table a:hover /* Quand le liens est survolé avec le curseur */
 {
 	color: yellow;
 }
+
+
+footer
+{
+	bottom: :0; /* "Coller" le footer en bas de la page, attention toute la page doit être utilisée pour que sa fonctionne */
+	width: 100%;
+	background-color: #696969;
+	height: 70px;
+	text-align: center; /* Centre le texte */
+	padding-top: 50px;
+	color: white;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #FFD700;
+}
+
+
+a{
+color:green;
+}
+
+a:hover{
+color: #FFD700;
+}
