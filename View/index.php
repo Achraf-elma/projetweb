@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="bootstrap/css/vaisselle.css" rel="stylesheet">
+    <link href="bootstrap-3/css/vaisselle.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,6 +24,6 @@
     <input type="button" value="Je fais la vaisselle du voisin ! " >
     <input type="button" value="Je cherche un voisin pour faire ma vaisselle" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3/js/bootstrap.min.js"></script>
   </body>
 </html>
