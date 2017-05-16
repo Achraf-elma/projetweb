@@ -8,7 +8,7 @@
 	<body>
 
 
-		<h1 class="title">La Vaiselle du Vosin</h1>
+		<h1 class="title">La Vaiselle du Voisin</h1>
 
 
   	<input type="button" value="Je fais la vaisselle du voisin ! " >
