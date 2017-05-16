@@ -16,7 +16,7 @@
   </head>
 
   <header><!-- En-tête du site -->
-
+  <img src=">./View/image/banniere.jpg" width="640" height="200">
   <ul class="topnav">
     <li><a class="active" href="#home">Accueil</a></li>
     <li><a href="#news">Offre de Vaisselle</a></li>

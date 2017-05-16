@@ -120,3 +120,9 @@ color:green;
 a:hover{
 color: #FFD700;
 }
+
+
+img {
+    width: 100%;
+    height: auto;
+}

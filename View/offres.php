@@ -1,4 +1,3 @@
-
 <?php
 
 	require_once("header.php");
@@ -10,11 +9,7 @@
 
 
 
-    <div class ="divButton">
-        
-        <button class="buttonVaisselle" ><span>Je fais la vaisselle d'un de mes voisins </span></button>
-        <button class="buttonVaisselle" ><span>Je cherche un voisin pour faire ma vaiselle</span></button>
-    </div>
+  
 
 
 
