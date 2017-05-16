@@ -15,17 +15,17 @@ body {
 
 .buttonVaisselle {
 display: inline-block;
-border-radius: 5%;
+border-radius: 4px;
 background-color: #f4511e;
 border: none;
-color: #FFFFFF;
-text-align: center;
-font-size: 28%;
-padding: 10%;
-width: 30%;
-transition: all 0.5s;
-cursor: pointer;
-margin: 15%;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 28px;
+ padding: 20px;
+ width: 200px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
 }
 
 .buttonVaisselle span {
