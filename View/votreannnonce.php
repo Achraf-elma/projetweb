@@ -16,3 +16,9 @@
     <script src="bootstrap-3/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<?php
+
+	require_once("footer.php");
+
+?>
