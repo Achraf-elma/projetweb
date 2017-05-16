@@ -19,7 +19,8 @@
 
     <h1 class="title">La Vaisselle du Voisin</h1>
 
-
+    <button class="button" style="vertical-align:middle"><span>Je fais la vaisselle du voisin !</span></button>
+    <button class="button" style="vertical-align:middle"><span>Je cherche un voisin pour faire ma vaisselle</span></button>
     <input type="button" value="Je fais la vaisselle du voisin ! " >
     <input type="button" value="Je cherche un voisin pour faire ma vaisselle" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
