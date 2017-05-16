@@ -45,7 +45,7 @@ transition: 0.5s;
 }
 
 .buttonVaisselle:hover span {
-padding-right: 25px;
+padding-right: 5%;
 }
 
 .buttonVaisselle:hover span:after {
@@ -56,7 +56,7 @@ right: 0;
 .divButton{
   margin-left: auto;
   margin-right: auto;
-  display: table;
+  display: flex;
    /*margin-top: 50vh; /* poussé de la moitié de hauteur de viewport
   transform: translateY(-50%); */
 
