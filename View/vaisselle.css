@@ -56,7 +56,7 @@ right: 0;
 .divButton{
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: table;
   margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%);
 
