@@ -20,19 +20,11 @@
 
       <td><span id="active"><a href="index.htm">Accueil</a></espan></td>
 
-      <td><a href="TP1.htm">TP1</a></td>
+      <td><a href="#">Offre de Vaisselle</a></td>
 
-      <td><a href="TP2.htm">TP2</a></td>
+      <td><a href="#">Postez votre annonce</a></td>
 
-      <td><a href="TP3.htm">TP3</a></td>
-
-      <td><a href="TP4.htm">TP4</a></td>
-
-      <td><a href="TP5.htm">TP5</a></td>
-
-      <td><a href="conclusion.htm">Conclusion</a></td>
-
-      <td><a href="annexes.htm">Annexes</a></td>
+      <td><a href="annexes.htm">A propos</a></td>
 
     </tr>
   </table>

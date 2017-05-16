@@ -68,8 +68,6 @@ right: 0;
 header
 {
 	width: 100%;
-
-
 	height: 120px; /* Le bloc fait 130 pixels de hauteur */
 	background-color: orange;
 }
@@ -87,7 +85,7 @@ header table a
 	color: white;
 	font-family: Verdana;
 	font-size: 2em;
-	padding-right: 5%;
+	padding-right: 10%;
 }
 
 header table #active a
