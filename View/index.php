@@ -20,9 +20,10 @@
 
     <div class ="divButton">
         <h1> Vaisselle du Voisin </h1>
-        <button class="button" ><span>Je fais la vaisselle du voisin ! </span></button>
-        <button class="button" ><span>Un voisin pour faire ma vaisselle</span></button>
+        <button class="button" ><span>Je fais la vaisselle d'un de mes voisins </span></button>
+        <button class="button" ><span>Je cherche un voisin pour faire ma vaiselle</span></button>
     </div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
