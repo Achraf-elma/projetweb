@@ -57,7 +57,7 @@ right: 0;
   margin-left: auto;
   margin-right: auto;
   display: table;
-  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%);
 
 
