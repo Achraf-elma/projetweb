@@ -16,13 +16,13 @@
 
 		  <fieldset><legend>Information Personnelle</legend>
 
- 			 <label for="Ville"> <span>Ville*</span> <input type="text" class="input-field" name="Telephone" value="" /></label>
- 			 <label for="Quartier"><span>Nom du Quartier*</span> <input type="text" class="input-field" name="Quartier" value="" /></label>
- 			 <label for="Telephone"><span>Telephone <span class="required">*</span></span><input type="text" class="input-field" name="Telephone" value="" /></label>
+ 			 <label for="Ville"> <span>Ville *</span> <input type="text" class="input-field" name="Telephone" value="" /></label>
+ 			 <label for="Quartier"><span>Nom du Quartier *</span> <input type="text" class="input-field" name="Quartier" value="" /></label>
+ 			 <label for="Telephone"><span>Telephone * <span class="required">*</span></span><input type="text" class="input-field" name="Telephone" value="" /></label>
 
 		 </fieldset>
 		  <fieldset><legend>Annonce</legend>
-			  <label for="Prix"><span>Telephone*</span><input type="text" class="input-field" name="prix" value="" /></label>
+			  <label for="Prix"><span>Prix *</span><input type="text" class="input-field" name="prix" value="" /></label>
 			 	<label for="Quantite"><span>Quantite de Vaisselle</span><select name="Quantite" class="select-field">
 									 			 																				<option value="Grosse">Grosse</option>
 									 			 																				<option value="Moyenne">Moyenne</option>
@@ -33,7 +33,7 @@
 
  			 </fieldset>
 		    <fieldset>
-		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Poste</button>
+		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Publier</button>
 		    </fieldset>
 
 		  </form>
