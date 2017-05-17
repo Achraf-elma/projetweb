@@ -13,24 +13,22 @@
 
 		    <h3>Postez votre annonce</h3>
 		    <h4>Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle.</h4>
-		    <fieldset><legend>Information Personnelle</legend>
-		      *<input placeholder="Ville" type="text" tabindex="1" required autofocus>
-					*<input placeholder="Code Postal" type="text" tabindex="2" required>
-		      	<input placeholder="Nom de Quartier" type="text" tabindex="3" required>
-		 				<input placeholder="Numero de telephone" type="tel" tabindex="4" required>
-		    </fieldset>
 
-		    <fieldset> <legend>Annonce</legend>
+				<fieldset><legend>Information Personnelle</legend>
 
-		      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-					<span>Quantite de Vaisselle</span><select name="Quantite" class="select-field">
-																									<option value="Grosse">Grosse</option>
-																									<option value="Moyenne">Moyenne</option>
-																									<option value="Petite">Petite</option>
-		    </fieldset>
+ 			 <label for="Ville"><span>Ville <span class="required">*</span></span><input type="text" class="input-field" name="Telephone" value="" /></label>
+ 			 <label for="Quartier"><span>Nom du Quartier <span class="required">*</span></span><input type="text" class="input-field" name="Quartier" value="" /></label>
+ 			 <label for="Telephone"><span>Telephone <span class="required">*</span></span><input type="text" class="input-field" name="Telephone" value="" /></label>
+ 			 <label for="Quantite"><span>Quantite de Vaisselle</span><select name="Quantite" class="select-field">
+ 			 																				<option value="Grosse">Grosse</option>
+ 			 																				<option value="Moyenne">Moyenne</option>
+ 			 																				<option value="Petite">Petite</option>
+ 			 </select></label>
 
+
+ 			 </fieldset>
 		    <fieldset>
-		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Postez l'annonce</button>
+		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Poste</button>
 		    </fieldset>
 
 		  </form>
