@@ -8,4 +8,7 @@
     $mess=$_POST['message'];
 
     echo $ville;
+		echo $quartier;
+		
+
  ?>
