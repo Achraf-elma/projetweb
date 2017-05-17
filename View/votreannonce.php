@@ -22,20 +22,21 @@
 
 		 </fieldset>
 		  <fieldset><legend>Annonce</legend>
-			  <label for="Prix"><span>Prix *</span><input type="text" class="input-field" name="prix" value="" /></label>
+			  <label placeholder="Maximum 13 euros" for="Prix"><span>Prix *</span><input type="text" class="input-field" name="prix" value="" /></label>
 
 			 	<label for="Quantite"><span>Quantite de Vaisselle </span><select name="Quantite" class="select-field">
 									 			 																				<option value="Grosse">Grosse</option>
 									 			 																				<option value="Moyenne">Moyenne</option>
 									 			 																				<option value="Petite">Petite</option>
-																															</select>
+																															   </select>
 				</label>
-						<fieldset>
-			  <label for="message"><span>Commentaire</span><textarea name="message" class="textarea-field"></textarea></label>																								 			 </select>
-         		</fieldset>
+							<fieldset>
+				  <label for="message"><span>Commentaire</span><textarea name="message" class="textarea-field"></textarea></label>																								 			 </select>
+	         		</fieldset>
 
 
  			 </fieldset>
+
 		    <fieldset>
 		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Publier</button>
 		    </fieldset>
