@@ -28,9 +28,11 @@
 									 			 																				<option value="Grosse">Grosse</option>
 									 			 																				<option value="Moyenne">Moyenne</option>
 									 			 																				<option value="Petite">Petite</option>
-																																 </label>
+																															</select>
+				</label>
+						<fieldset>
 			  <label for="message"><span>Commentaire</span><textarea name="message" class="textarea-field"></textarea></label>																								 			 </select>
-
+         		</fieldset>
 
 
  			 </fieldset>
