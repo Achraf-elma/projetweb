@@ -6,6 +6,7 @@
 
 
 <html>
+    <link href="./View/formulaire.css" rel="stylesheet" !important>
   <body>
 
   <h1 style="center-align"> Postez votre annonce immediatement </h1>
@@ -13,17 +14,21 @@
 
  <div class="form-style-3">
 <form>
-<fieldset><legend>Personal</legend>
-<label for="prix"><span>Prix <span class="required">*</span></span><input type="text" class="input-field" name="prix" value="" /></label>
-<label for="field2"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
-<label for="field3"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
-<label for="field4"><span>Quantite de Vaisselle</span><select name="field4" class="select-field">
+<fieldset><legend>Information Personnelle</legend>
+
+<label for="Ville"><span>Ville <span class="required">*</span></span><input type="text" class="input-field" name="Telephone" value="" /></label>
+<label for="Quartier"><span>Nom du Quartier <span class="required">*</span></span><input type="text" class="input-field" name="Quartier" value="" /></label>
+<label for="Telephone"><span>Telephone <span class="required">*</span></span><input type="text" class="input-field" name="Telephone" value="" /></label>
+<label for="Quantite"><span>Quantite de Vaisselle</span><select name="Quantite" class="select-field">
 																				<option value="Grosse">Grosse</option>
 																				<option value="Moyenne">Moyenne</option>
 																				<option value="Petite">Petite</option>
 </select></label>
+
+
 </fieldset>
-<fieldset><legend>Commentaire</legend>
+<fieldset><legend>Annonce</legend>
+<label for="prix"><span>Prix <span class="required">*</span></span><input type="text" class="input-field" name="prix" value="" /></label>
 <label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
 <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
 </fieldset>
