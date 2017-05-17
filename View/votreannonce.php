@@ -7,10 +7,11 @@
 
 <html>
     <link href="./View/formulaire.css" rel="stylesheet" !important>
+		<h1 style="center-align"> Postez votre annonce immediatement </h1>
+	 <p>  Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle. </p>
+
   <body>
-<div style="center-align; margin-left:20%;"
-  <h1 style="center-align"> Postez votre annonce immediatement </h1>
- <p>  Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle. </p>
+<div style="center-align; margin-left:20%; margin-right:20%;"
 
  <div class="form-style-3">
 <form>
@@ -35,7 +36,7 @@
 </form>
 </div>
 
-
+</div>
 
 	<form method="post" action="/Controller/controller_annonce_validation.php">
 
