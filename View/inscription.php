@@ -7,11 +7,11 @@
   <body>
 <form method="post" action="/Controller/controller_inscription.php">
 
-	<input type="text" placeholder="Pseudo" name="id"><br>
-	<input type="password" placeholder="Mot de passe" name="mdp"><br>
-  <input type="text" placeholder="Email"  name="email"><br>
-	 <input type="text" placeholder="Nom"  name="nom"><br>
-	 <input type="text" placeholder="Prenom"  name="prenom"><br>
+	<input type="text" placeholder="Pseudo" name="id" required><br>
+	<input type="password" placeholder="Mot de passe" name="mdp" required><br>
+  <input type="text" placeholder="Email"  name="email" required><br>
+	 <input type="text" placeholder="Nom"  name="nom" required><br>
+	 <input type="text" placeholder="Prenom"  name="prenom" required><br>
 
   <input type="submit" value="Connexion" class="connectionButton"><br>
 
