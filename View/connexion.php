@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-
 <?php
 
     require_once("header.php")
