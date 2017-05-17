@@ -17,7 +17,7 @@
 		  <fieldset><legend>Information Personnelle</legend>
 
  			<div> <label for="Ville"> <span>Ville *</span> <input type="text" class="input-field" name="Telephone" value="" /></label> </div>
- 			<div> <label for="Quartier"><span>Nom du Quartier *</span> <input type="text" class="input-field" name="Quartier" value="" /></label>
+ 			<div> <label for="Quartier"><span>Nom du Quartier *</span> <input type="text" class="input-field" name="Quartier" value="" /></label> </div>
  			 <label for="Telephone"><span>Telephone * </span><input type="text" class="input-field" name="Telephone" value="" /></label> </div>
 
 		 </fieldset>
@@ -28,8 +28,9 @@
 									 			 																				<option value="Grosse">Grosse</option>
 									 			 																				<option value="Moyenne">Moyenne</option>
 									 			 																				<option value="Petite">Petite</option>
+																																 </label>
 			  <label for="message"><span>Commentaire</span></span><textarea name="message" class="textarea-field"></textarea></label>																								 			 </select>
-			 </label>
+
 
 
  			 </fieldset>
