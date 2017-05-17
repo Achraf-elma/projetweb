@@ -9,14 +9,14 @@
     <link href="./View/formulaire.css" rel="stylesheet" !important>
   <body>
 		<div class="container">
-		  <form id="contact" action="" method="post">
+		  <form id="contact" action="/Controller/controller_votreannonce.php" method="post">
 
 		    <h3>Postez votre annonce</h3>
 		    <h4>Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle.</h4>
 
 		  <fieldset><legend>Information Personnelle</legend>
 
- 			 <label for="Ville"> <span>Ville *</span> <input type="text" class="input-field" name="Telephone" value="" /></label>
+ 			 <label for="Ville"> <span>Ville *</span> <input type="text" class="input-field" name="Ville" value="" /></label>
  			 <label for="Quartier"><span>Nom du Quartier *</span> <input type="text" class="input-field" name="Quartier" value="" /></label>
  			 <label for="Telephone"><span>Telephone * </span><input type="text" class="input-field" name="Telephone" value="" /></label>
 
