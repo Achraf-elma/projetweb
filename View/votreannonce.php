@@ -8,7 +8,7 @@
 <html>
     <link href="./View/formulaire.css" rel="stylesheet" !important>
   <body>
-
+<div style="center-align; margin-left:20%;"
   <h1 style="center-align"> Postez votre annonce immediatement </h1>
  <p>  Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle. </p>
 
