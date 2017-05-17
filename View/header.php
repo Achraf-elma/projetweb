@@ -20,6 +20,7 @@
   <ul class="topnav">
     <li><a class="active" href="#home">Accueil</a></li>
     <li><a href="inscription.php">Inscription</a></li>
+    <li><a href="connexion.php">Connexion</a></li>
     <li><a href="#news">Offre de Vaisselle</a></li>
     <li><a href="#contact">Postez une annonce</a></li>
     <li class="right"><a href="#about">A propos</a></li>
