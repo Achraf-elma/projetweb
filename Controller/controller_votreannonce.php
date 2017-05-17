@@ -7,8 +7,4 @@
     $Quantite=$_POST['Quantite'];
     $mess=$_POST['message'];
 
-    echo $ville;
-		echo $quartier;
-		
-
  ?>
