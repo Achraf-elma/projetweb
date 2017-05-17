@@ -15,8 +15,6 @@
 		    <h4>Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle.</h4>
 		    <fieldset><legend>Information Personnelle</legend>
 		      <input placeholder="Ville" type="text" tabindex="1" required autofocus>
-		    </fieldset>
-		    <fieldset>
 		      <input placeholder="Your Email Address" type="email" tabindex="2" required>
 		    </fieldset>
 		    <fieldset>
@@ -25,13 +23,13 @@
 		    <fieldset>
 		      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset> <legend>Annonce</legend>
 		      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
 		    </fieldset>
 		    <fieldset>
 		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 		    </fieldset>
-		    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+		   
 		  </form>
 		</div>
 
