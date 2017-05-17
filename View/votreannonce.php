@@ -23,14 +23,14 @@
 		 </fieldset>
 		  <fieldset><legend>Annonce</legend>
 			  <label for="Prix"><span>Prix *</span><input type="text" class="input-field" name="prix" value="" /></label>
-				<fieldset>
+
 			 	<label for="Quantite"><span>Quantite de Vaisselle </span> <select name="Quantite" class="select-field">
 									 			 																				<option value="Grosse">Grosse</option>
 									 			 																				<option value="Moyenne">Moyenne</option>
 									 			 																				<option value="Petite">Petite</option>
 																													 			 </select>
 			 </label>
-			 </fieldset>
+			 
 
  			 </fieldset>
 		    <fieldset>
