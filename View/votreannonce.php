@@ -11,7 +11,6 @@
 	 <p>  Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle. </p>
 
   <body>
-<div style="center-align; margin-left:20%; margin-right:20%;"
 
 
 <h1>Elegant Contact Form</h1>
