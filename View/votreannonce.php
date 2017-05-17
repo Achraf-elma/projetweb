@@ -15,8 +15,9 @@
 		    <h4>Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle.</h4>
 		    <fieldset><legend>Information Personnelle</legend>
 		      <input placeholder="Ville" type="text" tabindex="1" required autofocus>
-
-		      <input placeholder="Quartier" type="email" tabindex="2" required>
+		    </fieldset>
+		    <fieldset>
+		      <input placeholder="Your Email Address" type="email" tabindex="2" required>
 		    </fieldset>
 		    <fieldset>
 		      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
@@ -30,7 +31,7 @@
 		    <fieldset>
 		      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 		    </fieldset>
-		    <p class="copyright"> Une annonce est visible 24h</p>
+		    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
 		  </form>
 		</div>
 
