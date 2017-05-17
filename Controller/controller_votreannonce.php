@@ -1,6 +1,6 @@
 <?php
 
-		$ville=$_POST['Ville'];
+		$ville=strtoupper($_POST['Ville']);
 		$quartier=$_POST['Quartier'];
 		$telephone=$_POST['telephone'];
     $prix=$_POST['prix'];
