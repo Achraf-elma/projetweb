@@ -11,8 +11,8 @@
 
     <form method="post" action="/Controller/controller_connexion.php">
 
-			<input type="text" placeholder="Pseudo" name="id"><br>
-			<input type="password" placeholder="Mot de passe" name="mdp"><br>
+			<input type="text" placeholder="Pseudo" name="id" required=""><br>
+			<input type="password" placeholder="Mot de passe" name="mdp" required><br>
 			<input type="submit" value="Connexion" class="connectionButton"><br>
 
        <p>Cette page concerne les élèves de Polytech.</p>
