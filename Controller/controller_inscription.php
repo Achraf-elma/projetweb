@@ -34,6 +34,6 @@
 			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
 		//ajoutMembre($pseudo, $email,$mdp, $nom, $prenom, $sexe, $image);
 		echo "vous etes inscrits";
-			//header("Location: ../validation.php?message=Inscription_réussie&lien=test");
+			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
 ?>
