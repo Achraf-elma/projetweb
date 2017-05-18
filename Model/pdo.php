@@ -1,4 +1,5 @@
 <?php
+echo "on est dans le pdo";
 function connexion(){
 echo "on est dans la fonction";
     try {
