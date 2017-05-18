@@ -20,7 +20,7 @@
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
-		elseif (!is_null($existeMail($email)) || !is_null($existePseudo($pseudo))) {
+		elseif (!is_null($existeMail($email)) || !is_null($existePseudo($pseudo))) 
 		{
 			header("Location: ../erreur.php?message=Ce_mail_est_déjà_associé_à_un_compte");
 		}
