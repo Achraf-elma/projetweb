@@ -22,7 +22,7 @@ echo "ajoutemembre1";
 
 		  echo "supers";
 	   require_once("../Model/pdo.php");
-		 /
+		 
 			echo "ajoutemembre2";
         $bd = connexion();
 				echo "ajoutemembre3";
