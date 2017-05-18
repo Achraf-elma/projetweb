@@ -18,14 +18,16 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 );
  echo $dbopts["user"];
 
-//$app->run();
+$app->run();
 
 
+if($dbopts) {
+  $qry = $dbopts->prepare("select pseudo from membre;");
+  $qry->execute();
 
-$qry = $dbopts->prepare("select pseudo from membre;");
-$qry->execute();
+  $noms = $qry->fetchAll();
+  print_r($noms);
+}
 
-$noms = $qry->fetchAll();
-print_r($noms);
 
 ?>
