@@ -1,5 +1,5 @@
 <?php
-  echo "PDOpage";
+
 function connexion(){
 
 /*
@@ -21,10 +21,9 @@ function connexion(){
 
 
   // Création de la connexion
-  echo "PDO1";
+
   $bd = new PDO('pgsql:host=ec2-184-73-236-170.compute-1.amazonaws.com;port=5432;dbname=d45kt38b1qptd2;user=kjkoobypuqkyls;password=efda74dc519f256390b7ff5edada82bab39005467f833909383fb5d9bd15dcb3');
-  echo "PDO";
-  
+
  return $bd;
 
 }
