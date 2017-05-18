@@ -26,7 +26,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
     'pdo.password' => $dbopts["pass"]
   )
 );
-
+ echo $dbopts["user"];
 // Our web handlers
 
 $app->get('/', function() use($app) {
