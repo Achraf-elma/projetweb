@@ -15,7 +15,7 @@
     }
     */
 		echo "ajoutemembre";
-	/*function ajoutMembre($pseudo, $email,$pass_hache, $nom, $prenom, $sexe, $image)
+	function ajoutMembre($pseudo, $email,$pass_hache, $nom, $prenom, $sexe, $image)
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
@@ -26,6 +26,6 @@
         $ajout->execute();
         pg_close($bd);
 	}
-*/
+
 
 ?>
