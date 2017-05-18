@@ -1,9 +1,6 @@
 <?php
 echo "ok";
 
-
-function connexion()
-  {
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
@@ -61,6 +58,12 @@ $app->get('/twig/{name}', function($name) use($app) {
 
 $app->run();
 
-return $dbopts;
-}
+
+
+$qry = $dbopts->prepare("select pseudo from membre;");
+$qry->execute();
+
+$noms = $qry->fetchAll();
+print_r($noms);
+
 ?>
