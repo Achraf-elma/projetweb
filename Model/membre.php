@@ -20,7 +20,7 @@ echo "ajoutemembre1";
 	#Post: ajoute l'étudiant à la base de données
 	{
 
-		  echo "super";
+		 // echo "super";
 	     /* require_once("Model/pdo.php");
 						echo "ajoutemembre2";
         $bd = connexion();
