@@ -15,17 +15,19 @@
     }
     */
 echo "ajoutemembre1";
-	/*function ajoutMembre($pseudo, $email,$pass_hache, $nom, $prenom, $sexe, $image)
+	function ajoutMembre($pseudo, $email,$pass_hache, $nom, $prenom, $sexe, $image)
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
-	      require_once("Model/pdo.php");
+
+		  echo "super";
+	     /* require_once("Model/pdo.php");
 						echo "ajoutemembre2";
         $bd = connexion();
 				echo "ajoutemembre3";
         $ajout = prepare( "INSERT INTO etudiant (pseudo, email, mdp_membre, nom, prenom, sexe, image) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$nom."','".$prenom."','".$sexe."', '".$image."')");
         $ajout->execute();
-        pg_close($bd);
+        pg_close($bd); */
 	}
 */
 
