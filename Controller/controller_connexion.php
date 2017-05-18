@@ -1,6 +1,6 @@
 <?php
 
-	require_once("Model/etudiant.php");
+	require_once("../Model/membre.php");
     echo "sf";
 		$mail=$_POST['id'];
 		$mdp=sha1(sha1($_POST['mdp']));
