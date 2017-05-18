@@ -1,9 +1,9 @@
 <?php
 
 
-require_once("Model/pdo.php");
-$bd = connexion();
+  require_once("Model/pdo.php");
+  $bd = connexion();
   if (!empty($bd)){
-	require_once("View/index.php");
-}
+	   require_once("View/index.php");
+    }
 ?>
