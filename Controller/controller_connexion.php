@@ -1,25 +1,23 @@
 <?php
 
-		$id=$_POST['id'];
+	require_once("../Model/etudiant.php");
+
+		$mail=$_POST['id'];
 		$mdp=sha1(sha1($_POST['mdp']));
-		//$mdpBD=verifMdp($id);
+
+		$mdpBD=verifMdp($pseudo);
 
 
+		if ($mdpBD['mdp_membre'] == $mdp)
+		{
+			setcookie("id", $mail, time()+(3600),"/");
+			header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
 
 
-		//if ($mdpBD['mdp_etudiant'] == $mdp)
-		//{
-			setcookie("id", $id, time()+(3600),"/");
-			//initEtudiant($mail);
-			//header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
-
-
-		//}
-		//else
-		//{
-
-			//header("Location: ../erreur.php?message=Mot_de_passe_ou_mail_errone");
-		//}
-
+		}
+		else
+		{
+			header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_errone");
+		}
 
 ?>

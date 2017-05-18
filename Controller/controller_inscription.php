@@ -1,7 +1,9 @@
 <?php
 
-
 		require_once("../Model/membre.php");
+
+
+		// On recupere les donn2es du formualaire
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
 		$email=  !empty($_POST["email"]) ? $_POST["email"] : NULL;
 		$mdp= !empty($_POST["mdp"]) ? $_POST["mdp"] : NULL;
@@ -10,10 +12,7 @@
 		$sexe= !empty($_POST["sexe"]) ? $_POST["sexe"] : NULL;
     $image=".";
 
-
-    //ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
-
-		//$verificationemail=existeEtudiant($id);
+    // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
 		$existemail=existeMail($email);
 		$existpseudo=existePseudo($pseudo);
 
@@ -28,8 +27,8 @@
 		else
 		{
 			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
-		//ajoutMembre($pseudo, $email,$mdp, $nom, $prenom, $sexe, $image);
 		  echo "vous etes inscrits";
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
+
 ?>
