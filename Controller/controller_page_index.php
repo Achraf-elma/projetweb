@@ -4,7 +4,10 @@
   require_once("Model/pdo.php");
   echo "on a";
   $bd = connexion();
-  if (!empty($bd)){
-	   require_once("View/index.php");
-   }
+
+    $qry = $bd->prepare("select pseudo from membre;");
+    $qry->execute();
+
+  $noms = $qry->fetchAll();
+  print_r($noms);
 ?>
