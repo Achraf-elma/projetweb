@@ -1,7 +1,7 @@
 <?php
 
 
-		require_once("../Model/membre.php");
+		require_once("Model/membre.php");
 		$pseudo=$_POST['id'];
 		$email=$_POST['email'];
 		$mdp=$_POST['mdp'];
