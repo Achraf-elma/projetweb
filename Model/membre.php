@@ -29,7 +29,7 @@ echo "ajoutemembre1";
 
         $ajout = prepare( "INSERT INTO membre(pseudo, email, mdp_membre, nom, prenom, sexe, image) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$nom."','".$prenom."','".$sexe."', '".$image."')");
         $ajout->execute();
-
+			echo "done";
 	}
 
 
