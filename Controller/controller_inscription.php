@@ -23,7 +23,7 @@
 		}
 		elseif (!is_null($existemail['email']) || !is_null($existpseudo['pseudo']) )
 		{
-			header("Location: ../erreur.php?message=Ce_mail_est_déjà_associé_à_un_compte");
+			header("Location: ../erreur.php?message=Ce_pseudo_ou_ce_mail_est_déjà_associé_à_un_compte");
 		}
 		else
 		{
