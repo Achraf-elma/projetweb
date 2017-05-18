@@ -18,7 +18,7 @@ function connexion(){
  $dsn = "ec2-184-73-236-170.compute-1.amazonaws.com;dbname=d45kt38b1qptd2";
  $login = "kjkoobypuqkyls";
   $mdp = "efda74dc519f256390b7ff5edada82bab39005467f833909383fb5d9bd15dcb3";
-
+ echo "yes";
   // Création de la connexion
   $bd = new PDO($dsn, $login, $mdp);
  return $bd;
