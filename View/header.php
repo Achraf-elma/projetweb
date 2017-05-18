@@ -24,7 +24,7 @@
     <li><a href="#contact">Postez une annonce</a></li>
 
    <?php
-    if (isset($_COOKIE['id']))
+    if (!isset($_COOKIE['id']))
     {
       echo '<li class="right"><a href="inscription.php">Inscription</a></li>
     <li class="right"><a href="connexion.php">Connexion</a></li>';
