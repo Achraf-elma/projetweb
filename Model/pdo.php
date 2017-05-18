@@ -1,31 +1,15 @@
 <?php
-echo "ok";
 
-require('vendor/autoload.php');
+function connexion(){
 
-$app = new Silex\Application();
-$app['debug'] = true;
+ $host = "ec2-184-73-236-170.compute-1.amazonaws.com";
+ $dbname = "d45kt38b1qptd2";
+ $user = "kjkoobypuqkyls";
+ $psw = "efda74dc519f256390b7ff5edada82bab39005467f833909383fb5d9bd15dcb3"
+  $dbconn = pg_connect("host='".$host."' dbname='".$dbname."' user='".$user."' password='".$pwd."'")
+   or die('Connexion impossible : ' . pg_last_error());
 
-// Register the Postgres database add-on
-$dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new Herrera\Pdo\PdoServiceProvider(),
-  array(
-    'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"],
-    'pdo.port' => $dbopts["port"],
-    'pdo.username' => $dbopts["user"],
-    'pdo.password' => $dbopts["pass"]
-  )
-);
- echo $dbopts["user"];
-
-
-
-if($dbopts) {
-  $qry = $dbopts->prepare("select pseudo from membre;");
-  $qry->execute();
-
-  $noms = $qry->fetchAll();
-  print_r($noms);
+   return $dbconn;
 }
 
 
