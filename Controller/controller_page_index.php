@@ -1,7 +1,7 @@
 <?php
 
   echo "on y est";
-  require_once("../Model/pdo.php");
+  require_once("Model/pdo.php");
   echo "on a";
 /*  $bd = connexion();
   /* if (!empty($bd)){
