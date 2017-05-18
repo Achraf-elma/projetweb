@@ -12,7 +12,9 @@
   <input type="text" placeholder="Email"  name="email" required><br>
 	 <input type="text" placeholder="Nom"  name="nom" required><br>
 	 <input type="text" placeholder="Prenom"  name="prenom" required><br>
-	 Sexe : <input type="radio" name= "sexe" value="HOMME"> Homme 
+
+	 Sexe :
+	 <input type="radio" name= "sexe" value="HOMME"> Homme
 				<input  type="radio" name="sexe" value="FEMME" > Femme
   <input type="submit" value="Connexion" class="connectionButton"><br>
 

@@ -5,10 +5,10 @@
 		$pseudo=$_POST['id'];
 		$email=$_POST['email'];
 		$mdp=$_POST['mdp'];
-
 		$nom=$_POST['nom'];
 		$prenom=$_POST['prenom'];
-
+		$sexe=$_POST['sexe'];
+     $image="."
 
     ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
 		//$verificationemail=existeEtudiant($id);
