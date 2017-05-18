@@ -28,5 +28,29 @@ echo "ajoutemembre1";
 
 	}
 
+	function existeMail($email)
+	#Donnée: email
+	#Résultat: Renvoie l'étudiant dont l'email est la chaine de char donnée en paramètre sinon renvoie un vide
+	{
+		require_once("pdo.php");
+				$bd = connexion();
+				$result = $bd->query("SELECT * FROM membre WHERE email='".$email."'");
+			$etu=$result->fetch();
+		$result->closeCursor();
+				return $etu;
+	}
+
+	function existePseudo($pseudo)
+ #Donnée: pseudo
+ #Résultat: Renvoie l'étudiant dont le pseudo est la chaine de char donnée en paramètre sinon renvoie un vide
+ {
+	 require_once("pdo.php");
+			 $bd = connexion();
+			 $result = $bd->query("SELECT * FROM membre WHERE pseudo='".$pseudo."'");
+		 	 $etu=$result->fetch();
+	 		 $result->closeCursor();
+			 return $etu;
+ }
+
 
 ?>
