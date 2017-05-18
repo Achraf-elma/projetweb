@@ -1,6 +1,6 @@
 <?php
 
-	function verifMdp($mail)
+	function verifMdp($pseudo)
 	#Donnnée: Email de l'étudiant connecté
 	#Résultat: Renvoie le mot de passe de l'étudiant
 	{
