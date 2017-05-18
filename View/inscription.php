@@ -10,8 +10,8 @@
 	<input type="text" placeholder="Pseudo" name="id" pattern=".{5,}" required><br>
 	<input type="password" placeholder="Mot de passe" name="mdp" pattern=".{5,}" required><br>
   <input type="email" placeholder="Email"  name="email" required><br>
-	 <input type="text" placeholder="Nom"  name="nom" required><br>
-	 <input type="text" placeholder="Prenom"  name="prenom" required><br>
+	 <input type="text" placeholder="Nom"  name="nom" ><br>
+	 <input type="text" placeholder="Prenom"  name="prenom" ><br>
 
 	 Sexe :
 	 <input type="radio" name= "sexe" value="HOMME"> Homme
