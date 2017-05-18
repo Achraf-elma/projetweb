@@ -20,16 +20,12 @@ echo "ajoutemembre1";
 	#Post: ajoute l'étudiant à la base de données
 	{
 
-		  echo "supers";
+
 	   require_once("../Model/pdo.php");
-
-			echo "ajoutemembre2";
         $bd = connexion();
-				echo "ajoutemembre32";
-
         $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp_membre, nom, prenom, sexe, image) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$nom."','".$prenom."','".$sexe."', '".$image."')");
         $ajout->execute();
-			echo "done";
+
 	}
 
 

@@ -2,20 +2,22 @@
 
 
 		require_once("../Model/membre.php");
-		$pseudo=$_POST['id'];
-		$email=$_POST['email'];
-		$mdp=$_POST['mdp'];
-		$nom=$_POST['nom'];
-		$prenom=$_POST['prenom'];
-		$sexe=$_POST['sexe'];
+		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
+		$email=  !empty($_POST["email"]) ? $_POST["email"] : NULL;
+		$mdp= !empty($_POST["mdp"]) ? $_POST["mdp"] : NULL;
+		$nom= !empty($_POST["nom"]) ? $_POST["nom"] : NULL;
+		$prenom= !empty($_POST["prenom"]) ? $_POST["prenom"] : NULL;
+		$sexe= !empty($_POST["sexe"]) ? $_POST["sexe"] : NULL;
     $image=".";
+
 
     //ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
 		ajoutMembre($pseudo, $email,$mdp, $nom, $prenom, $sexe, $image);
+		echo "vous etes inscrits";
 		//$verificationemail=existeEtudiant($id);
 
-
-		/*if (empty($id) || empty($code) || empty($mdp))
+		/*
+		if (empty($id) || empty($code) || empty($mdp))
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
