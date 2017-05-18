@@ -1,5 +1,5 @@
 <?php
-
+  echo "PDO1";
 function connexion(){
 
 /*
