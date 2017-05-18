@@ -21,7 +21,7 @@ echo "ajoutemembre1";
 	{
 
 		  echo "supers";
-	   /* require_once("Model/pdo.php");
+	   require_once("pdo.php");
 			echo "ajoutemembre2";
         $bd = connexion();
 				echo "ajoutemembre3";
