@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<title>Erreur</title>
-		<link rel="stylesheet" href="View/login.css">
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+				<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	</head>
 	<body>
 

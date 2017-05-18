@@ -7,7 +7,7 @@
 			require_once("pdo.php");
 
 				$bd = connexion();
-				$req = $bd->prepare("SELECT mdp_membre FROM etudiant WHERE pseudo='".$pseudo."'");
+				$req = $bd->prepare("SELECT mdp_membre FROM membre WHERE pseudo='".$pseudo."'");
 				$req->execute();
 				$mdpBD=$req->fetch();
 	 			$req->closeCursor();
