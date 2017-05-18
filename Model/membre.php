@@ -27,9 +27,9 @@ echo "ajoutemembre1";
         $bd = connexion();
 				echo "ajoutemembre3";
 
-        $ajout = prepare( "INSERT INTO etudiant (pseudo, email, mdp_membre, nom, prenom, sexe, image) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$nom."','".$prenom."','".$sexe."', '".$image."')");
+        $ajout = prepare( "INSERT INTO membre(pseudo, email, mdp_membre, nom, prenom, sexe, image) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$nom."','".$prenom."','".$sexe."', '".$image."')");
         $ajout->execute();
-        
+
 	}
 
 
