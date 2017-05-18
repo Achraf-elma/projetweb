@@ -6,8 +6,6 @@
 	</head>
 
 
-		<h1 class="title">Vous êtes inscrit</h1>
-
 		<p>  <?php echo $message ?>   </p>
     <a  class="buttonVaisselle" type="button"  href="index.php"> Retour</a>
 		<div style="text-align:center">
