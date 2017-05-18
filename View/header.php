@@ -23,8 +23,8 @@
     <li><a href="connexion.php">Connexion</a></li>
     <li><a href="#news">Offre de Vaisselle</a></li>
     <li><a href="#contact">Postez une annonce</a></li>
-    <li class="right"><a href="#about">Mon profil</a></li>
     <li class="right"><a href="#about">A propos</a></li>
+    <li class="right"><a href="#about">Mon profil</a></li>
   </ul>
 </header>
 </html>
