@@ -8,7 +8,7 @@ $dbconn = pg_connect("host=ec2-184-73-236-170.compute-1.amazonaws.com dbname=d45
     or die('Connexion impossible : ' . pg_last_error());
 
 // Exécution de la requête SQL
-$query = 'SELECT * FROM authors';
+$query = 'SELECT * FROM membre';
 $result = pg_query($query) or die('Échec de la requête : ' . pg_last_error());
 
 // Affichage des résultats en HTML
