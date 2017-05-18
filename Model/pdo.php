@@ -18,7 +18,6 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 );
  echo $dbopts["user"];
 
-$app->run();
 
 
 if($dbopts) {
