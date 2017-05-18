@@ -8,8 +8,8 @@
 <form method="post" action="/Controller/controller_inscription.php">
 
 	<input type="text" placeholder="Pseudo" name="id" pattern="[A-Za-z0-9]{5}" required ><br>
-	<input type="password" placeholder="Mot de passe" name="mdp" required><br>
-  <input type="text" placeholder="Email"  name="email" required><br>
+	<input type="password" placeholder="Mot de passe" name="mdp" pattern="{5}" required><br>
+  <input type="mail" placeholder="Email"  name="email" required><br>
 	 <input type="text" placeholder="Nom"  name="nom" required><br>
 	 <input type="text" placeholder="Prenom"  name="prenom" required><br>
 
