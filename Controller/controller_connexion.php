@@ -10,7 +10,7 @@
 
 		if ($mdpBD['mdp_membre'] == $mdp)
 		{
-			setcookie("id", $mail, time()+(3600),"/");
+			setcookie("id", $pseudo, time()+(3600),"/");
 			header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
 		}
 		else
