@@ -9,7 +9,7 @@
 	<body>
 		<h1>Connexion</h1>
 
-    <form method="post" action="/Controller/controller_connexion.php">
+    <form method="post" action="../Controller/controller_connexion.php">
 
 			<input type="text" placeholder="Pseudo" name="id" required=""><br>
 			<input type="password" placeholder="Mot de passe" name="mdp" required><br>
