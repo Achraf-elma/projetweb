@@ -10,7 +10,8 @@
 		$sexe=$_POST['sexe'];
      $image="."
 
-    ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
+    //ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
+		ajoutMembre($pseudo, $email,$mdp, $nom, $prenom, $sexe, $image);
 		//$verificationemail=existeEtudiant($id);
 
 
