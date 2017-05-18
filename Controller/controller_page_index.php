@@ -6,6 +6,12 @@ require_once("Model/pdo.php");
 // Connexion, sélection de la base de données
 $dbconn = connexion();
 
+
+$qry = $dbconn->prepare("SELECT nom FROM membre;");
+$qry->execute();
+$noms = $qry->fetchAll();
+print_r($noms);
+
 // Exécution de la requête SQL
 $query = 'SELECT * FROM membre';
 $result = pg_query($query) or die('Échec de la requête : ' . pg_last_error());
