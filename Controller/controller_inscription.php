@@ -14,13 +14,14 @@
     //ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
 
 		//$verificationemail=existeEtudiant($id);
-
+		$existemail=existeMail($email);
+		$existpseudo=existePseudo($pseudo);
 
 		if (empty($nom) || empty($email) || empty($mdp) || empty($nom) || empty($prenom) || empty($sexe))
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
-		elseif (!is_null($existeMail($email)) || !is_null($existePseudo($pseudo))) 
+		elseif (!is_null($existemail['email']) || !is_null($existpseudo['pseudo']) )
 		{
 			header("Location: ../erreur.php?message=Ce_mail_est_déjà_associé_à_un_compte");
 		}
