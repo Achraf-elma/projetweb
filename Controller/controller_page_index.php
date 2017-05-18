@@ -2,7 +2,7 @@
 
   echo "on y est";
 
-require_once("Model/pdo.php")
+require_once("Model/pdo.php");
 // Connexion, sélection de la base de données
 $dbconn = connexion();
 

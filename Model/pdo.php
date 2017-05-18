@@ -1,5 +1,5 @@
 <?php
-
+echo "ok";
 function connexion(){
 
   /* $host = "ec2-184-73-236-170.compute-1.amazonaws.com";
