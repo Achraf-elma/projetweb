@@ -93,7 +93,7 @@ ul.topnav li a {
 
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: #b1edb9;}
 
 ul.topnav li a.active {background-color: #f2efc9;}
 
