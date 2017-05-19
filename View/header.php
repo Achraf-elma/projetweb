@@ -18,11 +18,12 @@
   <header><!-- En-tête du site -->
   <a href="index.php" > <img src="./View/image/banniere.jpg" width="640" height="200"> </a>
   <ul class="topnav">
+    <div style = "center-align">
     <li><a class="active" href="#home">Accueil</a></li>
     <li><a href="#about">Le principe</a></li>
     <li><a href="#news">Offre de Vaisselle</a></li>
     <li><a href="#contact">Postez une annonce</a></li>
-
+</div>
    <?php
     if (!isset($_COOKIE['id']))
     {
