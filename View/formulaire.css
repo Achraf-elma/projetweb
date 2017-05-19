@@ -12,6 +12,10 @@
   text-rendering: optimizeLegibility;
 }
 
+html{
+  width: 100%;
+}
+
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
