@@ -12,9 +12,7 @@
   text-rendering: optimizeLegibility;
 }
 
-html{
-  width: 100%;
-}
+
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -24,9 +22,7 @@ body {
   color: #777;
   background: #4CAF50;
   margin-top:0;
-  width: 80%;
-  margin-right:auto;
-  margin-left:auto;
+
 }
 
 .container {

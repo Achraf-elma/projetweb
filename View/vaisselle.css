@@ -5,7 +5,10 @@
 body {
     background-color: #c1e2cc;
     margin:0;  /*Supprimer les marges par défault des navigateurs */
-    width: 100%; /* Le bloc fait toute la largeur de la page */
+  
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 /*
