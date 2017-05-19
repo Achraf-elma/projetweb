@@ -5,7 +5,7 @@
 body {
     background-color: #c1e2cc;
     margin:0;  /*Supprimer les marges par défault des navigateurs */
-  
+
     width: 80%;
     margin-right:auto;
     margin-left:auto;
@@ -15,7 +15,9 @@ body {
     Style des boutons
 */
 
-
+html {
+  width:100%;
+}
 .buttonVaisselle {
 display: inline-block;
 border-radius: 10px;
