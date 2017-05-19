@@ -7,12 +7,13 @@ body {
     margin:0;  /*Supprimer les marges par défault des navigateurs */
 }
 
-.banniere{
+.banniere {
 
    width:100%;
 
 }
-.contenu{
+
+.contenu {
 
    width: 85%;
    margin-right:auto;
