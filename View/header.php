@@ -19,10 +19,10 @@
   <a href="index.php" > <img src="./View/image/banniere.jpg" width="640" height="200"> </a>
   <ul class="topnav">
 
-    <li style = "center-align"><a class="active" href="#home">Accueil</a></li>
-    <li style = "center-align"><a href="#about">Le principe</a></li>
-    <li style = "center-align"><a href="#news">Offre de Vaisselle</a></li>
-    <li style = "center-align"><a href="#contact">Postez une annonce</a></li>
+    <li class="center" ><a class="active" href="#home">Accueil</a></li>
+    <li  class="center"><a href="#about">Le principe</a></li>
+    <li  class="center"><a href="#news">Offre de Vaisselle</a></li>
+    <li  class="center" ><a href="#contact">Postez une annonce</a></li>
 
    <?php
     if (!isset($_COOKIE['id']))
