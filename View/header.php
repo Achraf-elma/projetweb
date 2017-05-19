@@ -16,7 +16,7 @@
   <div class="banniere"> <a href="index.php" > <img src="./View/image/banniere.jpg" width="640" height="200"> </a> </div>
 
   </head>
-  <div class ="contenu">
+  <div class ="banniere">
   <header><!-- En-tête du site -->
 
   <ul class="topnav">
