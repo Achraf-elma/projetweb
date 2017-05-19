@@ -15,11 +15,7 @@
 
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  color: #777;
+
 
   margin-top:0;
 
@@ -27,6 +23,11 @@ body {
 }
 
 .container {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
   max-width: 1000px;
   width: 80%;
   margin: 0 auto;
