@@ -5,12 +5,19 @@
 body {
     background-color: #c1e2cc;
     margin:0;  /*Supprimer les marges par défault des navigateurs */
-
-   width: 85%;
-    margin-right:auto;
-    margin-left:auto; 
 }
 
+.banniere{
+
+   width:100%;
+
+}
+.contenu{
+
+  width: 85%;
+   margin-right:auto;
+   margin-left:auto;
+}
 /*
     Style des boutons
 */
