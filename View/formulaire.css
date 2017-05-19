@@ -20,11 +20,9 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: #4CAF50;
+
   margin-top:0;
-  width: 80%;
-  margin-right:auto;
-  margin-left:auto;
+
 
 }
 
@@ -33,6 +31,7 @@ body {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  background: #4CAF50;
 }
 
 #contact input[type="text"],
