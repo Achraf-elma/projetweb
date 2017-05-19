@@ -15,7 +15,7 @@ body {
    width: 80%;
    margin-right:auto;
    margin-left:auto;
-   background-color: #c1e2cc;
+   background-color: #cbackground-color: #c1e2cc;1e2cc;
 }
 /*
     Style des boutons
@@ -89,6 +89,7 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: #c1e2cc;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
