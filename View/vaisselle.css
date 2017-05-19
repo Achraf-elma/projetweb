@@ -4,12 +4,12 @@
 
 body {
     background-color: #c1e2cc;
-    margin-top:0;  /*Supprimer les marges par défault des navigateurs */
+    margin:0;  /*Supprimer les marges par défault des navigateurs */
 }
 
 .banniere {
 
-   width:100%;
+  
 
 }
 
