@@ -5,7 +5,6 @@
 body {
     width: 100%;
     margin:0;
-    background-color: #c1e2cc;
     /*background-color: red;
       /*Supprimer les marges par défault des navigateurs */
 }
@@ -16,7 +15,7 @@ body {
    width: 80%;
    margin-right:auto;
    margin-left:auto;
-   background-color: #cbackground-color: #c1e2cc;1e2cc;
+    background-color: #c1e2cc;
 }
 /*
     Style des boutons
