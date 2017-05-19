@@ -89,7 +89,7 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #c1e2cc;
+
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
