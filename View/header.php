@@ -16,7 +16,7 @@
   <div class="banniere"> <a href="index.php" > <img src="./View/image/banniere.jpg" width="640" height="200"> </a> </div>
 
   </head>
-
+  <div class ="contenu">
   <header><!-- En-tête du site -->
 
   <ul class="topnav">
@@ -36,7 +36,7 @@
       echo '<li class="right"><a href="deconnexion.php">Deconnexion</a></li>';
     }
     ?>
-
+  </div>
   <!--  <li class="right"><a href="#about">Mon profil</a></li> -->
   </ul>
 </header>

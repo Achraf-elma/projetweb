@@ -5,9 +5,7 @@
 body {
     background-color: #c1e2cc;
     margin:0;
-    width: 80%;
-    margin-right:auto;
-    margin-left:auto;  /*Supprimer les marges par défault des navigateurs */
+      /*Supprimer les marges par défault des navigateurs */
 }
 
 .banniere {

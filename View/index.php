@@ -5,9 +5,9 @@
 ?>
 
 <html>
-<div class="contenu">
-  <body>
 
+  <body>
+  <div class ="contenu">
 
 
 
@@ -17,13 +17,13 @@
         <button class="buttonVaisselle" onclick="javascript:location.href='votreannonce.php'"><span>Je cherche un voisin pour faire ma vaiselle</span></button>
     </div>
 
-
+</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3/js/bootstrap.min.js"></script>
   </body>
-</div>	
+	
 </html>
 
 <?php
