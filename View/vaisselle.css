@@ -8,9 +8,9 @@ body {
       /*Supprimer les marges par défault des navigateurs */
 }
 
-.banniere {
+html {
 
-
+  background-color: #f4511e;
 
 }
 
