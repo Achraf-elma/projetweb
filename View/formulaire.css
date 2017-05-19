@@ -20,6 +20,8 @@ body {
   color: #777;
   background: #4CAF50;
   margin-top:0;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .container {
