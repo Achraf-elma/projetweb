@@ -27,7 +27,7 @@ function existeNomQuartier($nomQuartier, $idquartier)
   return $Quartier['quartier_exists'];
 }
 
-function creerQuartierIfNotExists($nomQuartier, $idquartier)
+function creerQuartierIfNotExists($nomQuartier, $idville)
 #Donnée: nom Quartier
 #Resultat Creer un quartier si n'existe pas
 {
