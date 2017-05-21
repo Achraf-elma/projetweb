@@ -38,4 +38,5 @@ function creerQuartierIfNotExists($nomQuartier)
   $ajout->execute();
   }
 
+}
 ?>

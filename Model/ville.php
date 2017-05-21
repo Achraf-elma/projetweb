@@ -32,11 +32,11 @@ function creerVilleIfNotExists($nomVille)
   require_once("pdo.php");
   $bd= connexion();
 
-  if(!existeNomVille($nomVille))
-  {
-  $ajout = $bd->prepare( "INSERT INTO ville(nomVille) VALUES ('".$nomVille."')");
-  $ajout->execute();
-  }
+      if(!existeNomVille($nomVille))
+      {
+      $ajout = $bd->prepare( "INSERT INTO ville(nomVille) VALUES ('".$nomVille."')");
+      $ajout->execute();
+      }
 }
 
 ?>
