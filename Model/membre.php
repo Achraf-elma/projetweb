@@ -28,13 +28,13 @@
 
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
 		 creerVilleIfNotExists($nomVille);
-		 //creerQuartierIfNotExists($nomQuartier);
+		 creerQuartierIfNotExists($nomQuartier);
 		 echo "super4";
 		 $idville = recupIdVille($nomVille);
-		 //$idquartier = recupIdQuartier($nomQuartier);
+		$idquartier = recupIdQuartier($nomQuartier);
 
-    //  $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
-    //  $ajout->execute();
+  	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
+    $ajout->execute();
 
 	}
 
