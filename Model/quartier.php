@@ -12,7 +12,7 @@ function recupIdQuartier($nomQuartier)
   return $idQuartier;
 }
 
-function existeNomQuartier($nomQuartier)
+function existeNomQuartier($nomQuartier, $idville)
 #Donnée: nom Quartier
 #Resultat Bool
 #Vérifie que le nom Quartier est bien le nom d'une quartier existante
@@ -20,21 +20,21 @@ function existeNomQuartier($nomQuartier)
   require_once("pdo.php");
   $bd= connexion();
 
-  $result = $bd->query("SELECT EXISTS (SELECT * FROM quartier WHERE nomQuartier='$nomQuartier') AS quartier_exists");
+  $result = $bd->query("SELECT EXISTS (SELECT * FROM quartier WHERE nomQuartier='".$nomQuartier."' AND  idville='".$idville."') AS quartier_exists");
   $Quartier = $result->fetch();
   return $Quartier['quartier_exists'];
 }
 
-function creerQuartierIfNotExists($nomQuartier)
+function creerQuartierIfNotExists($nomQuartier, $idville)
 #Donnée: nom Quartier
 #Resultat Creer un quartier si n'existe pas
 {
   require_once("pdo.php");
   $bd= connexion();
 
-  if(!existeNomQuartier($nomQuartier))
+  if(!existeNomQuartier($nomQuartier, $idville))
   {
-  $ajout = $bd->prepare( "INSERT INTO quartier(nomQuartier) VALUES ('".$nomQuartier."')");
+  $ajout = $bd->prepare( "INSERT INTO quartier(nomQuartier) VALUES ('".$nomQuartier."', '".$idville."')");
   $ajout->execute();
   }
 
