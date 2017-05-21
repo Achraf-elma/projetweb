@@ -1,6 +1,6 @@
 <?php
 
-function recupIdMembre($nomMembre)
+function recupIdMembre($pseudo)
 #Donnée: nom de la membre
 #Resultat: int correspondant a l'idMembre de la membre dont le nom est en parametre
 {
