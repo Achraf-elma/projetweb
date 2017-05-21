@@ -10,14 +10,15 @@
 	<input type="text" placeholder="Pseudo" name="id" pattern=".{5,}" required><br>
 	<input type="password" placeholder="Mot de passe" name="mdp" pattern=".{5,}" required><br>
   <input type="email" placeholder="Email"  name="email" required><br>
-	 <input type="text" placeholder="Nom"  name="nom" required><br>
-	 <input type="text" placeholder="Prenom"  name="prenom" required ><br>
+	<input type="tel" placeholder="Tel"  name="telephone" required><br>
+
 
 	 Sexe :
 	 <input type="radio" name= "sexe" value="HOMME"> Homme
 				<input  type="radio" name="sexe" value="FEMME" > Femme
   <input type="submit" value="Connexion" class="connectionButton"><br>
-
+	<input type="text" placeholder="Ville"  name="ville" required><br>
+ 	<input type="text" placeholder="Nom du quartier"  name="quartier" required><br>
 
 </form>
 

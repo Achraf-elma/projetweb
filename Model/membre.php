@@ -14,14 +14,14 @@
 				return $mdpBD;
 	}
 
-	function ajoutMembre($pseudo, $email,$pass_hache, $nom, $prenom, $sexe, $image)
+	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$ville, $quartier);
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
 	   require_once("../Model/pdo.php");
 
         $bd = connexion();
-        $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp_membre, nom, prenom, sexe, image) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$nom."','".$prenom."','".$sexe."', '".$image."')");
+        $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp_membre, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$ville."', '".$quartier."')");
         $ajout->execute();
 
 	}

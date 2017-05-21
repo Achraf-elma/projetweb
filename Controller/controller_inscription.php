@@ -7,10 +7,11 @@
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
 		$email=  !empty($_POST["email"]) ? $_POST["email"] : NULL;
 		$mdp= !empty($_POST["mdp"]) ? $_POST["mdp"] : NULL;
-		$nom= !empty($_POST["nom"]) ? $_POST["nom"] : NULL;
-		$prenom= !empty($_POST["prenom"]) ? $_POST["prenom"] : NULL;
+		$telephone= !empty($_POST["telephone"]) ? $_POST["telephone"] : NULL;
 		$sexe= !empty($_POST["sexe"]) ? $_POST["sexe"] : NULL;
-    $image=".";
+		$ville= !empty($_POST["ville"]) ? $_POST["ville"] : NULL;
+		$quartier= !empty($_POST["quartier"]) ? $_POST["quartier"] : NULL;
+
 
     // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
 		$existemail=existeMail($email);
@@ -26,8 +27,8 @@
 		}
 		else
 		{
-			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$nom,$prenom,$sexe, $image);
-		  echo "vous etes inscrits";
+			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$telephone,$sexe,$ville, $quartier);
+		  echo "Vous etes bien inscrits";
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
 
