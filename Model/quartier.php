@@ -25,4 +25,17 @@ function existeNomQuartier($nomQuartier)
   return $Quartier['quartier_exists'];
 }
 
+function creerQuartierIfNotExists($nomQuartier)
+#Donnée: nom Quartier
+#Resultat Creer un quartier si n'existe pas
+{
+  require_once("pdo.php");
+  $bd= connexion();
+
+  if(!existeNomQuartier($nomVille))
+  {
+  $ajout = $bd->prepare( "INSERT INTO quartier(nomQuartier) VALUES ('".$nomQuartier."')");
+  $ajout->execute();
+  }
+
 ?>

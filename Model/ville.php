@@ -25,4 +25,18 @@ function existeNomVille($nomVille)
   return $Ville['ville_exists'];
 }
 
+function creerVilleIfNotExists($nomVille)
+#Donnée: nom Ville
+#Resultat Creer une ville
+{
+  require_once("pdo.php");
+  $bd= connexion();
+
+  if(!existeNomVille($nomVille))
+  {
+  $ajout = $bd->prepare( "INSERT INTO ville(nomVille) VALUES ('".$nomVille."')");
+  $ajout->execute();
+  }
+}
+
 ?>

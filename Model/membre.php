@@ -14,13 +14,21 @@
 				return $mdpBD;
 	}
 
-	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$ville, $quartier);
+	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$nomVille, $nomQuartier);
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
 	   require_once("../Model/pdo.php");
+		 require_once("../Model/quartier.php");
+		 require_once("../Model/ville.php");
+     $bd = connexion();
 
-        $bd = connexion();
+		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
+		 creerVilleIfNotExists($nomVille);
+		 creerQuartierIfNotExists($nomQuartier);
+		 $idville = recupIdVille($nomVille));
+		 $idquartier = recupIdQuartier($nomQuartier);
+
         $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp_membre, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$ville."', '".$quartier."')");
         $ajout->execute();
 
