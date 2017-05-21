@@ -5,7 +5,7 @@
 	#Résultat: Renvoie le mot de passe de l'étudiant
 	{
 			require_once("pdo.php");
-
+     echo "yep";
 				$bd = connexion();
 				$req = $bd->prepare("SELECT mdp_membre FROM membre WHERE pseudo='".$pseudo."'");
 				$req->execute();

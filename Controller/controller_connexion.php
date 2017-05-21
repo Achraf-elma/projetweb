@@ -15,7 +15,7 @@
 		}
 		else
 		{
-			header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_errone");
+			//header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_errone");
 		}
 
 ?>
