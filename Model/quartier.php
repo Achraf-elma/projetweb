@@ -9,7 +9,7 @@ function recupIdQuartier($nomQuartier, $idville)
 
   $result = $bd->query("SELECT idquartier FROM quartier WHERE nomQuartier='$nomQuartier' AND  idville=$idville");
   $idQuartier=$result->fetch();
-
+  echo $idQuartier["idquartier"];
   return $idQuartier["idquartier"];
 }
 
