@@ -29,6 +29,7 @@ function creerVilleIfNotExists($nomVille)
 #Donnée: nom Ville
 #Resultat Creer une ville
 {
+  echo "creerVilleIfNotExists";
   require_once("pdo.php");
   $bd= connexion();
 
