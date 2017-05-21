@@ -1,6 +1,6 @@
 <?php
 
-		require_once("../Model/membre.php");
+		//require_once("../Model/membre.php");
    echo "ok go";
 /*
 		// On recupere les donn2es du formualaire
