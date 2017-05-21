@@ -31,7 +31,7 @@
 		 $idville = recupIdVille($nomVille);
 		 echo $idville;
 		 creerQuartierIfNotExists($nomQuartier, $idville);
-		 echo "super4";
+		 echo "quartierok";
 		 //$idville = recupIdVille($nomVille);
 	   //$idquartier = recupIdQuartier($nomQuartier);
 
