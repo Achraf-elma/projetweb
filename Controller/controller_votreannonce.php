@@ -9,16 +9,16 @@
      echo $prix;
      echo $quantite;
      echo $commentaire;
-		/*if (empty($prix) || empty($quantite) || empty($commentaire))
+		if (empty($prix) || empty($quantite) || empty($commentaire))
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
 		else
 		{
-*/
+
 			ajoutOffre($prix,$quantiteVaisselle,$cookie,$commentaire);
 
 		//	header("Location: ../validation.php?message=Votre_annonce_est_poste");
-		//}
+		}
 
  ?>
