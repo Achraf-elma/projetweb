@@ -1,8 +1,8 @@
 <?php
 
 		require_once("../Model/membre.php");
-      echo "ok goc";
-/*
+
+
 		// On recupere les donn2es du formualaire
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
 		$email=  !empty($_POST["email"]) ? $_POST["email"] : NULL;
@@ -12,14 +12,14 @@
 		$ville= !empty($_POST["ville"]) ? $_POST["ville"] : NULL;
 		$quartier= !empty($_POST["quartier"]) ? $_POST["quartier"] : NULL;
 
-*/
 
-/*
+
+
     // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
 		$existemail=existeMail($email);
 		$existpseudo=existePseudo($pseudo);
 
-		if (empty($nom) || empty($email) || empty($mdp) || empty($nom) || empty($prenom) || empty($sexe))
+		if (empty($nom) || empty($email) || empty($mdp) || empty($sexe))
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
