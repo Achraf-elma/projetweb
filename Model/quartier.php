@@ -36,6 +36,7 @@ function creerQuartierIfNotExists($nomQuartier, $idville)
   if(!existeNomQuartier($nomQuartier, $idville))
   {
   $ajout = $bd->prepare( "INSERT INTO quartier(nomQuartier, idville) VALUES ('".$nomQuartier."', '".$idville."')");
+    $ajout->execute();
   }
 
 }
