@@ -1,8 +1,8 @@
 <?php
 
 		require_once("../Model/membre.php");
-
-
+   echo "ok go";
+/*
 		// On recupere les donn2es du formualaire
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
 		$email=  !empty($_POST["email"]) ? $_POST["email"] : NULL;
@@ -11,8 +11,8 @@
 		$sexe= !empty($_POST["sexe"]) ? $_POST["sexe"] : NULL;
 		$ville= !empty($_POST["ville"]) ? $_POST["ville"] : NULL;
 		$quartier= !empty($_POST["quartier"]) ? $_POST["quartier"] : NULL;
+*/
 
-		echo "ok go";
 
 /*
     // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
