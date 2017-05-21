@@ -23,7 +23,7 @@
 	   require_once("../Model/pdo.php");
 		 require_once("../Model/quartier.php");
 		 require_once("../Model/ville.php");
-		 echo "super3";
+		 echo "superf";
      $bd = connexion();
 
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
