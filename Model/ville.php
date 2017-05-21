@@ -31,7 +31,9 @@ function creerVilleIfNotExists($nomVille)
 {
   echo "creerVilleIfNotExists";
   require_once("pdo.php");
+  echo "pdoFOUND";
   $bd= connexion();
+  echo "connexiondone";
 
       if(!existeNomVille($nomVille))
       {
