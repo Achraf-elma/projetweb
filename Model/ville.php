@@ -35,8 +35,9 @@ function creerVilleIfNotExists($nomVille)
   $bd= connexion();
   echo "connexiondone";
 
-      if(!existeNomVille($nomVille))
+      if(!existeNomVille('ok'))
       {
+      echo "yes";
       $ajout = $bd->prepare( "INSERT INTO ville(nomVille) VALUES ('".$nomVille."')");
       $ajout->execute();
       }
