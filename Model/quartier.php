@@ -22,6 +22,7 @@ function existeNomQuartier($nomQuartier, $idville)
 
   $result = $bd->query("SELECT EXISTS (SELECT * FROM quartier WHERE nomQuartier='$nomQuartier' AND  idville=$idville) AS quartier_exists");
   $Quartier = $result->fetch();
+  
   return $Quartier['quartier_exists'];
 }
 

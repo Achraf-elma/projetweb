@@ -9,6 +9,7 @@ function recupIdVille($nomVille)
 
   $result = $bd->query("SELECT idville FROM ville WHERE nomVille='".$nomVille."'");
   $idVille=$result->fetch();
+  echo $idVille;
   return $idVille["idville"];
 }
 
