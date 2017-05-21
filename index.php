@@ -5,16 +5,27 @@
 
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script>
     <script type="text/javascript">
-    function initialize() {
+		function initialize() {
 
-     var options = {
-      types: ['(cities)'],
-     };
 
-     var input = document.getElementById('recherche-ville');
-     var autocomplete = new google.maps.places.Autocomplete(input, options);
+       var defaultBounds = new google.maps.LatLngBounds(
+         new google.maps.LatLng(-33.8902, 151.1759),
+         new google.maps.LatLng(-33.8474, 151.2631));
+
+       var input = document.getElementById('searchTextField');
+
+       var options = {
+         types: ['geocode'],
+         componentRestrictions: {country: 'fr'}
+       };
+
+       autocomplete = new google.maps.places.Autocomplete(input, options);
+
     }
-    google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize)
+
+
+
     </script>
 
     </head>
