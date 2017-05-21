@@ -29,6 +29,7 @@
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
 		 creerVilleIfNotExists($nomVille);
 		 $idville = recupIdVille($nomVille);
+		 echo $idville;
 		 //creerQuartierIfNotExists($nomQuartier, $idville);
 		 echo "super4";
 		 //$idville = recupIdVille($nomVille);
