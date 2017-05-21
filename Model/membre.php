@@ -19,19 +19,20 @@
 	#Post: ajoute l'étudiant à la base de données
 	{
 		echo "done";
+		/*
 	   require_once("../Model/pdo.php");
 		 require_once("../Model/quartier.php");
 		 require_once("../Model/ville.php");
      $bd = connexion();
-
+   */
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
-		 creerVilleIfNotExists($nomVille);
+		 /* creerVilleIfNotExists($nomVille);
 		 creerQuartierIfNotExists($nomQuartier);
 		 $idville = recupIdVille($nomVille));
 		 $idquartier = recupIdQuartier($nomQuartier);
 
         $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp_membre, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$ville."', '".$quartier."')");
-        $ajout->execute();
+        $ajout->execute(); */
 
 	}
 
