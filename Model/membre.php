@@ -31,9 +31,9 @@
 		 creerQuartierIfNotExists($nomQuartier);
 		 echo "super4";
 		 $idville = recupIdVille($nomVille);
-		$idquartier = recupIdQuartier($nomQuartier);
+	   $idquartier = recupIdQuartier($nomQuartier);
 
-  	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
+  	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
     $ajout->execute();
 
 	}
