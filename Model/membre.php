@@ -30,12 +30,12 @@
 		 creerVilleIfNotExists($nomVille);
 		 creerQuartierIfNotExists($nomQuartier);
 
-		 $idville = recupIdVille($nomVille));
+		 $idville = recupIdVille($nomVille);
 		 $idquartier = recupIdQuartier($nomQuartier);
-/*
+
       $ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, ville, quartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
       $ajout->execute();
-*/
+
 	}
 
 	function existeMail($email)
