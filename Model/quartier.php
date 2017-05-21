@@ -1,13 +1,13 @@
 <?php
 
-function recupIdQuartier($nomQuartier)
+function recupIdQuartier($nomQuartier, $idville)
 #Donnée: nom de la quartier
 #Resultat: int correspondant a l'idQuartier de la quartier dont le nom est en parametre
 {
   require_once("pdo.php");
   $bd= connexion();
 
-  $result = $bd->query("SELECT idquartier FROM quartier WHERE nomQuartier='".$nomQuartier."'");
+  $result = $bd->query("SELECT idquartier FROM quartier WHERE nomQuartier='$nomQuartier' AND  idville=$idville");
   $idQuartier=$result->fetch();
 
   return $idQuartier["idquartier"];
