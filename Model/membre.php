@@ -19,9 +19,8 @@
 	#Post: ajoute l'étudiant à la base de données
 	{
 
-     echo "super1";
+
 	   require_once("../Model/pdo.php");
-     echo "super2";
 		 require_once("../Model/quartier.php");
 		 require_once("../Model/ville.php");
 		 echo "super3";
@@ -30,7 +29,7 @@
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
 		 creerVilleIfNotExists($nomVille);
 		 creerQuartierIfNotExists($nomQuartier);
-
+		 echo "super4";
 		 $idville = recupIdVille($nomVille);
 		 $idquartier = recupIdQuartier($nomQuartier);
 
