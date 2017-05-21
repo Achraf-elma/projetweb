@@ -21,7 +21,7 @@ function existeNomVille($nomVille)
   $bd= connexion();
 
   $result = $bd->query("SELECT EXISTS (SELECT * FROM ville WHERE nomVille='$nomVille') AS ville_exists");
-  $Ville = $result>fetch();
+  $Ville = $result->fetch();
   return $Ville['ville_exists'];
 }
 
