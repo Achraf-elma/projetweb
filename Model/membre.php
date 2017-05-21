@@ -9,7 +9,7 @@ function recupIdMembre($nomMembre)
 
   $result = $bd->query("SELECT idmembre FROM membre WHERE pseudo ='".$pseudo."'");
   $idMembre=$result->fetch();
-
+  echo $idMembre["idmembre"];
   return $idMembre["idmembre"];
 }
 	function verifMdp($pseudo)
@@ -19,7 +19,6 @@ function recupIdMembre($nomMembre)
 			require_once("pdo.php");
 
 				$bd = connexion();
-				 echo "yep";
 				$req = $bd->prepare("SELECT mdp FROM membre WHERE pseudo='".$pseudo."'");
 				$req->execute();
 				$mdpBD=$req->fetch();
