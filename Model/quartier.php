@@ -9,7 +9,7 @@ function recupIdQuartier($nomQuartier)
 
   $result = $bd->query("SELECT idquartier FROM quartier WHERE nomQuartier='".$nomQuartier."'");
   $idQuartier=$result->fetch();
-  return $idQuartier;
+  return $idQuartier["idquartier"];
 }
 
 function existeNomQuartier($nomQuartier, $idville)
