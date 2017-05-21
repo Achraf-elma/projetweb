@@ -18,9 +18,9 @@
     // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
 		$existemail=existeMail($email);
 		$existpseudo=existePseudo($pseudo);
-		echo "ok";
-/*
-		if (empty($nom) || empty($email) || empty($mdp) || empty($sexe))
+	
+
+		if (empty($pseudo) || empty($email) || empty($mdp) || empty($sexe))
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
@@ -35,5 +35,5 @@
 		  echo "Vous etes bien inscrits";
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
-*/
+
 ?>
