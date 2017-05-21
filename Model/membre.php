@@ -25,10 +25,11 @@
 		 require_once("../Model/quartier.php");
 		 require_once("../Model/ville.php");
      $bd = connexion();
-/*
+
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
 		 creerVilleIfNotExists($nomVille);
 		 creerQuartierIfNotExists($nomQuartier);
+/*		 
 		 $idville = recupIdVille($nomVille));
 		 $idquartier = recupIdQuartier($nomQuartier);
 

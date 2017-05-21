@@ -1,7 +1,7 @@
 <?php
 
 		require_once("../Model/membre.php");
-      echo "ok go5";
+      echo "ok go";
 /*
 		// On recupere les donn2es du formualaire
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
