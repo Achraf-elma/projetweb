@@ -21,8 +21,9 @@
 		echo "done";
 
 	   require_once("../Model/pdo.php");
-		 /*
+
 		 require_once("../Model/quartier.php");
+		 /*
 		 require_once("../Model/ville.php");
      $bd = connexion();
 
