@@ -6,14 +6,16 @@
 		$mdp=sha1(sha1($_POST['mdp']));
 
 		$mdpBD=verifMdp($pseudo);
-    $idmembre = recupIdMembre($pseudo);
+
 
 		if ($mdpBD['mdp'] == $mdp)
 		{
 			global $cookie;
+			$idmembre = recupIdMembre($pseudo);
+			echo $idmembre;
 			$cookie-> $idmembre;
 			setcookie("id", $idmembre, time()+(3600),"/");
-			header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
+		//	header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
 		}
 		else
 		{
