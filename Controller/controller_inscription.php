@@ -12,7 +12,9 @@
 		$ville= !empty($_POST["ville"]) ? $_POST["ville"] : NULL;
 		$quartier= !empty($_POST["quartier"]) ? $_POST["quartier"] : NULL;
 
+		echo "ok go";
 
+/*
     // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
 		$existemail=existeMail($email);
 		$existpseudo=existePseudo($pseudo);
@@ -32,5 +34,5 @@
 		  echo "Vous etes bien inscrits";
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
-
+*/
 ?>
