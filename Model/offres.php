@@ -25,8 +25,8 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
     $bd = connexion();
     $date_publication =  recupDateActuelle();
     echo $date_publication['now'];
-  //  $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantite."','".$idmembre."','".$commentaire."',$date_publication['now'])");
-    //$ajout->execute();
+   $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantite."','".$idmembre."','".$commentaire."',$date_publication['now'])");
+    $ajout->execute();
 
   }
 
