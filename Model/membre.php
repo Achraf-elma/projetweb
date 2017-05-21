@@ -32,11 +32,10 @@
 		 echo $idville;
 		 creerQuartierIfNotExists($nomQuartier, $idville);
 		 echo "quartierok";
-		 //$idville = recupIdVille($nomVille);
-	   //$idquartier = recupIdQuartier($nomQuartier);
+		 $idquartier = recupIdQuartier($nomQuartier);
 
-  	//$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
-    //$ajout->execute();
+  	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
+    $ajout->execute();
 
 	}
 
