@@ -10,6 +10,7 @@
 
 		if ($mdpBD['mdp'] == $mdp)
 		{
+			echo "dsd";
 			global $cookie;
 			$idmembre = recupIdMembre($pseudo);
 			echo $idmembre;
