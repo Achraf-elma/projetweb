@@ -14,7 +14,7 @@
 				return $mdpBD;
 	}
 
-	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$nomVille, $nomQuartier);
+	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$nomVille, $nomQuartier)
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
