@@ -9,13 +9,24 @@ function recupOffre(){
   return $answer;
 }
 
-function creerOffre(){
+function recupDateActuelle()
+{
+  require_once("pdo.php");
+  $bd= connexion();
+
+  $result = $bd->query("SELECT CURRENT_TIMESTAMP;");
+  $temps=$result->fetch();
+  return $temps;
+}
+function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
   #Donnée: ensemble de donnees pour creer l'offre
   #Post: ajoute l'offre à la base de données
      require_once("../Model/pdo.php");
     $bd = connexion();
-    $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantite."','".$idmembre."','".$commentaire."','".$date_publication."')");
-    $ajout->execute();
+    $date_publication =  recupDateActuelle();
+    echo $date_publication;
+  //  $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantite."','".$idmembre."','".$commentaire."',$date_publication['now'])");
+    //$ajout->execute();
 
   }
 

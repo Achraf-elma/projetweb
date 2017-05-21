@@ -10,17 +10,17 @@
 
 		if ($mdpBD['mdp'] == $mdp)
 		{
-			echo "dsd";
-			global $cookie;
+
+
 			$idmembre = recupIdMembre($pseudo);
-			echo $idmembre;
+			global $cookie;
 			$cookie-> $idmembre;
 			setcookie("id", $idmembre, time()+(3600),"/");
-		//	header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
+		  header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
 		}
 		else
 		{
-			//header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_errone");
+			header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_errone");
 		}
 
 ?>
