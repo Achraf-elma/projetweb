@@ -20,7 +20,7 @@ function existeNomQuartier($nomQuartier, $idville)
   require_once("pdo.php");
   $bd= connexion();
 
-  $result = $bd->query("SELECT EXISTS (SELECT * FROM quartier WHERE nomQuartier='".$nomQuartier."' AND  idville='".$idville."') AS quartier_exists");
+  $result = $bd->query("SELECT EXISTS (SELECT * FROM quartier WHERE nomQuartier='$nomQuartier' AND  idville=$idville) AS quartier_exists");
   $Quartier = $result->fetch();
   return $Quartier['quartier_exists'];
 }

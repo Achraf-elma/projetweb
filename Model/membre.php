@@ -30,7 +30,7 @@
 		 creerVilleIfNotExists($nomVille);
 		 $idville = recupIdVille($nomVille);
 		 echo $idville;
-		 //creerQuartierIfNotExists($nomQuartier, $idville);
+		 creerQuartierIfNotExists($nomQuartier, $idville);
 		 echo "super4";
 		 //$idville = recupIdVille($nomVille);
 	   //$idquartier = recupIdQuartier($nomQuartier);
