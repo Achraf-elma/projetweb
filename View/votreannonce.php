@@ -17,7 +17,7 @@
 		  <fieldset><legend>Information Personnelle</legend>
 		 </fieldset>
 		  <fieldset><legend>Annonce</legend>
-			  <label  for="Prix"><span>Prix *</span><input type="text" class="input-field" name="prix" required /></label>
+			  <label for="Prix"><span>Prix *</span><input type="text" class="input-field" name="prix" required></label>
 
 			 	<label for="Quantite"><span>Quantite de Vaisselle </span><select name="quantite" class="select-field">
 									 			 																				<option value="Grosse">Grosse</option>
