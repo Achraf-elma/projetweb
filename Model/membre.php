@@ -1,5 +1,17 @@
 <?php
 
+function recupIdMembre($nomMembre)
+#Donnée: nom de la membre
+#Resultat: int correspondant a l'idMembre de la membre dont le nom est en parametre
+{
+  require_once("pdo.php");
+  $bd= connexion();
+
+  $result = $bd->query("SELECT idmembre FROM membre WHERE pseudo ='".$pseudo."'");
+  $idMembre=$result->fetch();
+
+  return $idMembre["idmembre"];
+}
 	function verifMdp($pseudo)
 	#Donnnée: Email de l'étudiant connecté
 	#Résultat: Renvoie le mot de passe de l'étudiant
@@ -15,7 +27,7 @@
 				return $mdpBD;
 	}
 
-	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$nomVille,$nomQuartier)
+	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$nomMembre,$nomQuartier)
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
@@ -23,26 +35,26 @@
 
 	   require_once("../Model/pdo.php");
 		 require_once("../Model/quartier.php");
-		 require_once("../Model/ville.php");
+		 require_once("../Model/membre.php");
 
      $bd = connexion();
 
-		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
-		 creerVilleIfNotExists($nomVille);
-		 $idville = recupIdVille($nomVille);
-		 echo $idville;
-		 creerQuartierIfNotExists($nomQuartier, $idville);
-		 echo "quartierok";
-		 $idquartier = recupIdQuartier($nomQuartier, $idville);
-      echo $idquartier;
-  	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$sexe."', '$idville', '$idquartier')");
+		// On creer la membre / quartier si besoin. ET on recupere leur id respectif
+		 creerMembreIfNotExists($nomMembre);
+		 $idmembre = recupIdMembre($nomMembre);
+
+		 creerQuartierIfNotExists($nomQuartier, $idmembre);
+
+		 $idquartier = recupIdQuartier($nomQuartier, $idmembre);
+
+  	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idmembre, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$sexe."', '$idmembre', '$idquartier')");
     $ajout->execute();
 
 	}
 
 	function existeMail($email)
 	#Donnée: email
-	#Résultat: Renvoie l'étudiant dont l'email est la chaine de char donnée en paramètre sinon renvoie un vide
+	#Résultat: Renvoie le membre dont l'email est la chaine de char donnée en paramètre sinon renvoie un vide
 	{
 		require_once("pdo.php");
 					$bd = connexion();
@@ -54,7 +66,7 @@
 
 	function existePseudo($pseudo)
  #Donnée: pseudo
- #Résultat: Renvoie l'étudiant dont le pseudo est la chaine de char donnée en paramètre sinon renvoie un vide
+ #Résultat: Renvoie le membre dont le pseudo est la chaine de char donnée en paramètre sinon renvoie un vide
  {
 	 require_once("pdo.php");
 				 $bd = connexion();
@@ -63,6 +75,7 @@
 		 		 $result->closeCursor();
 				 return $etu;
  }
+
 
 
 ?>
