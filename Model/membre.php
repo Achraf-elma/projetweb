@@ -33,7 +33,7 @@
 		 creerQuartierIfNotExists($nomQuartier, $idville);
 		 echo "quartierok";
 		 $idquartier = recupIdQuartier($nomQuartier, $idville);
-
+      echo $idquartier;
   	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$prenom."','".$sexe."', '".$idville."', '".$idquartier."')");
     $ajout->execute();
 
