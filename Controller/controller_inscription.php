@@ -27,6 +27,7 @@
 		}
 		else
 		{
+			echo "done";
 			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$telephone,$sexe,$ville, $quartier);
 		  echo "Vous etes bien inscrits";
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
