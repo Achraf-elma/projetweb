@@ -9,7 +9,7 @@ function recupIdVille($nomVille)
 
   $result = $bd->query("SELECT idville FROM ville WHERE nomVille='".$nomVille."'");
   $idVille=$result->fetch();
-  return $idPromo;
+  return $idVille;
 }
 
 function existeNomVille($nomVille)
@@ -27,20 +27,16 @@ function existeNomVille($nomVille)
 
 function creerVilleIfNotExists($nomVille)
 #Donnée: nom Ville
-#Resultat Creer une ville
+#Resultat Creer un ville si n'existe pas
 {
-  echo "creerVilleIfNotExists";
   require_once("pdo.php");
-  echo "pdoFOUND";
   $bd= connexion();
-  echo "connexiondone";
 
-      if(!existeNomVille('ok'))
-      {
-      echo "yes";
-      $ajout = $bd->prepare( "INSERT INTO ville(nomVille) VALUES ('".$nomVille."')");
-      $ajout->execute();
-      }
+  if(!existeNomVille($nomVille))
+  {
+  $ajout = $bd->prepare( "INSERT INTO ville(nomVille) VALUES ('".$nomVille."')");
+  $ajout->execute();
+  }
+
 }
-
 ?>
