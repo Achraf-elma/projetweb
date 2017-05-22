@@ -17,7 +17,7 @@
 		else
 		{
 
-			creerOffre($prix,$quantiteVaisselle,$cookie,$commentaire);
+			creerOffre($prix,$quantiteVaisselle,$_COOKIE['id'],$commentaire);
 
 		//	header("Location: ../validation.php?message=Votre_annonce_est_poste");
 		}
