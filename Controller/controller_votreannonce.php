@@ -7,7 +7,7 @@
 
 
 
-    $existeOffreDuMembre = OffreDuMembre($_COOKIE['id']);
+  //  $existeOffreDuMembre = OffreDuMembre($_COOKIE['id']);
     echo 'ok';
     /*if (empty($prix) || !is_int($prix))
 		{
