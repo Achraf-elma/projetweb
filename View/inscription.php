@@ -5,6 +5,7 @@
 ?>
 <html>
   <body>
+<div style="text-align:center;"
 <form method="post" action="/Controller/controller_inscription.php">
 
 	<input type="text" placeholder="Pseudo" name="id" pattern=".{5,}" required><br>
@@ -21,7 +22,7 @@
  	<input type="text" placeholder="Nom du quartier"  name="quartier" required><br>
 
 </form>
-
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="bootstrap-3/js/bootstrap.min.js"></script>
