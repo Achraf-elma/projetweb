@@ -37,7 +37,7 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
      require_once("../Model/pdo.php");
     $bd = connexion();
 
-   $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantite."','".$idmembre."','".$commentaire."',now())");
+   $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantiteVaisselle."','".$idmembre."','".$commentaire."',now())");
    $ajout->execute();
 
   }

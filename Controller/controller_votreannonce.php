@@ -9,15 +9,15 @@
      echo $prix;
      echo $quantite;
      echo $commentaire;
-     echo $_COOKIE['id'];
+
 		if (empty($prix) || empty($quantite) || empty($commentaire))
 		{
 			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
 		}
 		else
 		{
-
-			creerOffre($prix,$quantiteVaisselle,$_COOKIE['id'],$commentaire);
+       $id = $_COOKIE['id'];
+			creerOffre($prix,$quantiteVaisselle,$id,$commentaire);
 
 		//	header("Location: ../validation.php?message=Votre_annonce_est_poste");
 		}
