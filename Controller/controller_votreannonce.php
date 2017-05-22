@@ -9,7 +9,7 @@
 
    $existeOffreDuMembre = OffreDuMembre($_COOKIE['id']);
     echo 'ok';
-    if (empty($prix) || !is_int($prix))
+    if (empty($prix) || !is_numeric($prix) )
 		{
 			header("Location: ../erreur.php?message=Merci_de_renseigner_un_prix");
 		}
@@ -23,6 +23,6 @@
        $id = $_COOKIE['id'];
 			creerOffre($prix,$quantite,$id,$commentaire);
       header("Location: ../validation.php?message=Votre_annonce_est_poste");
-		} 
+		}
 
  ?>
