@@ -12,7 +12,7 @@
 		{
 			header("Location: ../erreur.php?message=Merci_de_renseigner_un_prix");
 		}
-    elseif ( !is_null($existeOffreDuMembre['idmembre'] ) 
+    elseif ( !is_null($existeOffreDuMembre['idmembre']) ) 
     {
       header("Location: ../erreur.php?message=Vous_avez_deja_une_annonce_en_cours");
     }

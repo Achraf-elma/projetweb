@@ -42,17 +42,19 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
 
   }
 
+function OffreDuMembre($idmembre){
+       #Donnée: id membre
+       #Post: retourne l'offre de vaisselle du membre sinon renvoie vide
+     {
+       require_once("pdo.php");
+             $bd = connexion();
 
-  function OffreDuMembre($idmembre){
-    #Donnée: id membre
-    #Post: retourne l'offre de vaisselle du membre
-       require_once("../Model/pdo.php");
-      $bd = connexion();
+             $result = $bd->query("SELECT * FROM offre WHERE idmembre='".$idmembre."'");
+             $offre=$result->fetch();
+             $result->closeCursor();
+             return $offre;
+     }
 
-     $offre = $bd->query( "SELECT * FROM offre WHERE idmembre ='".$idmembre."' "):
-     return $offre;
-
-    }
 
   /*
 function modifieReponse($nouveauLibelle,$idRep,$idQuestion){
