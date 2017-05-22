@@ -36,14 +36,23 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
   #Post: ajoute l'offre à la base de données
      require_once("../Model/pdo.php");
     $bd = connexion();
-    echo $prix;
-    echo $quantiteVaisselle;
-    echo $idmembre;
-    echo $commentaire;
+
    $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantiteVaisselle."','".$idmembre."','".$commentaire."',now())");
    $ajout->execute();
 
   }
+
+
+  function OffreDuMembre($idmembre){
+    #Donnée: id membre
+    #Post: retourne l'offre de vaisselle du membre
+       require_once("../Model/pdo.php");
+      $bd = connexion();
+
+     $offre = $bd->query( "SELECT * FROM offre WHERE idmembre ='".$idmembre."' "):
+     return $offre;
+
+    }
 
   /*
 function modifieReponse($nouveauLibelle,$idRep,$idQuestion){
@@ -54,6 +63,7 @@ function modifieReponse($nouveauLibelle,$idRep,$idQuestion){
 
   $bd->exec("UPDATE reponse SET libelle_rep ='".$nouveauLibelle."' WHERE idQuestion ='".$idQuestion."'  AND idR ='".$idRep."'");
 
-} */
+}
+ */
 
 ?>

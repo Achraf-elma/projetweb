@@ -6,20 +6,21 @@
     $commentaire=!empty($_POST["message"]) ? $_POST["message"] : " ";
 
 
-     echo $prix;
-     echo $quantite;
-     echo $commentaire;
-     echo $_COOKIE['id'];
-		if (empty($prix) || empty($quantite) || empty($commentaire))
+
+    $existeOffreDuMembre = OffreDuMembre($_COOKIE['id']);
+		if (empty($prix) || !is_int($prix))
 		{
-			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
+			header("Location: ../erreur.php?message=Merci_de_renseigner_un_prix");
 		}
+    elseif ( !is_null($existeOffreDuMembre['idmembre'] ) 
+    {
+      header("Location: ../erreur.php?message=Vous_avez_deja_une_annonce_en_cours");
+    }
 		else
 		{
        $id = $_COOKIE['id'];
-			creerOffre($prix,$quantiteVaisselle,$id,$commentaire);
-
-		//	header("Location: ../validation.php?message=Votre_annonce_est_poste");
+			creerOffre($prix,$quantite,$id,$commentaire);
+      header("Location: ../validation.php?message=Votre_annonce_est_poste");
 		}
 
  ?>
