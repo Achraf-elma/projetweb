@@ -45,16 +45,15 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
 function OffreDuMembre($idmembre){
        #Donnée: id membre
        #Post: retourne l'offre de vaisselle du membre sinon renvoie vide
-     {
-       echo 'o';
-       //require_once("../Model/pdo.php");
-       echo "yes";
-        //     $bd = connexion();
 
-          // $result = $bd->query("SELECT * FROM offre WHERE idmembre='".$idmembre."'");
-          //   $offre=$result->fetch();
-            // $result->closeCursor();
-          //   return $offre;
+       require_once("../Model/pdo.php");
+       echo "yes";
+          $bd = connexion();
+
+       $result = $bd->query("SELECT * FROM offre WHERE idmembre='".$idmembre."'");
+           $offre=$result->fetch();
+         $result->closeCursor();
+          return $offre;
      }
 
 
