@@ -47,14 +47,14 @@ function OffreDuMembre($idmembre){
        #Post: retourne l'offre de vaisselle du membre sinon renvoie vide
      {
        echo 'o';
-       require_once("../Model/pdo.php");
+       //require_once("../Model/pdo.php");
        echo "yes";
-             $bd = connexion();
+        //     $bd = connexion();
 
-             $result = $bd->query("SELECT * FROM offre WHERE idmembre='".$idmembre."'");
-             $offre=$result->fetch();
-             $result->closeCursor();
-             return $offre;
+          // $result = $bd->query("SELECT * FROM offre WHERE idmembre='".$idmembre."'");
+          //   $offre=$result->fetch();
+            // $result->closeCursor();
+          //   return $offre;
      }
 
 
