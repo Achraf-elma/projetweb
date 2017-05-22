@@ -23,10 +23,9 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
   #Post: ajoute l'offre à la base de données
      require_once("../Model/pdo.php");
     $bd = connexion();
-    
-
+   echo "yes";
    $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantite."','".$idmembre."','".$commentaire."',now())");
-    $ajout->execute();
+   $ajout->execute();
 
   }
 

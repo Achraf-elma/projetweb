@@ -3,7 +3,7 @@
     require_once("../Model/offres.php");
     $prix=!empty($_POST["prix"]) ? $_POST['prix'] : NULL;
     $quantite=!empty($_POST["quantite"]) ? $_POST["quantite"] : NULL;
-    $commentaire=!empty($_POST["message"]) ? $_POST["message"] : NULL;
+    $commentaire=!empty($_POST["message"]) ? $_POST["message"] : " ";
 
 
      echo $prix;
