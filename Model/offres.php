@@ -36,10 +36,10 @@ function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
   #Post: ajoute l'offre à la base de données
      require_once("../Model/pdo.php");
     $bd = connexion();
-    $prix =12;
-    $quantiteVaisselle='Grosse';
-    $idmembre =3;
-    $commentaire ="adsa";
+    echo $prix;
+    echo $quantiteVaisselle;
+    echo $idmembre;
+    echo $commentaire;
    $ajout = $bd->prepare( "INSERT INTO offre(prix, quantiteVaisselle, idmembre, commentaire, date_publication) VALUES ('".$prix."','".$quantiteVaisselle."','".$idmembre."','".$commentaire."',now())");
    $ajout->execute();
 
