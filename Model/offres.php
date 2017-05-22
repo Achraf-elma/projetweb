@@ -1,4 +1,17 @@
 <?php
+/*
+CREATE TABLE offre(
+  idoffre SERIAL NOT NULL,
+  prix REAL,
+  quantiteVaisselle VARCHAR CHECK(quantiteVaisselle IN('Grosse','Moyenne', 'Petit')),
+  idmembre INTEGER,
+  commentaire VARCHAR,
+  date_publication timestamptz,
+  CONSTRAINT offre_PK PRIMARY KEY(idoffre),
+  CONSTRAINT offre_OF_membre_FK FOREIGN KEY(idmembre) REFERENCES membre(idmembre)
+);
+ */
+
 
 function recupOffre(){
   #Données: idquestion, identifiant de la question(ou groupe de proposition)
