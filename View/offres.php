@@ -14,7 +14,7 @@
 		{
 			echo "Offre numero" . $donnees['idoffre'];
 		  echo "PRIX " . $donnees["prix"];
-			echo "Quantite de Vaisselle" . $donnees["quantiteVaisselle"];
+			echo  $donnees["quantiteVaisselle"];
 
 
 
