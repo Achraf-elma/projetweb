@@ -57,6 +57,7 @@ function OffreDuMembre($idmembre){
      }
 
 
+
   /*
 function modifieReponse($nouveauLibelle,$idRep,$idQuestion){
   #Données: nouveau Libelle un string, idRep l'identifiant de la reponse et idQuestion l'identifiant de la question (ou groupe)
