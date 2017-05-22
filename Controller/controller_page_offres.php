@@ -4,7 +4,7 @@
 
 	if (isset($_COOKIE['id']))
 	{
-	 	require_once("Model/offre.php");
+	 	require_once("Model/offres.php");
 
 			$iD=$_COOKIE["id"];
 
