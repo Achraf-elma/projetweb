@@ -7,7 +7,7 @@
 <html>
 
 	<body>
-    <div style="center-align">
+    <div style="text-align:center;" >
 		<h1>Connexion</h1>
 
     <form method="post" action="../Controller/controller_connexion.php">
