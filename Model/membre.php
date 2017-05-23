@@ -57,10 +57,10 @@ function recupIdMembre($pseudo)
 		// On creer la ville / quartier si besoin. ET on recupere leur id respectif
 		 creerVilleIfNotExists($nomMembre);
 		 $idville = recupIdVille($nomVille);
-
-		 creerQuartierIfNotExists($nomQuartier, $idville);
+echo $idville;
+		 /* creerQuartierIfNotExists($nomQuartier, $idville);
 		 $idquartier = recupIdQuartier($nomQuartier, $idville);
- echo "bd3";
+ echo "bd3"; */
   	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$sexe."', '$idville', '$idquartier')");
     $ajout->execute();
 
