@@ -5,7 +5,7 @@
 ?>
 <html>
   <body>
-<div style="text-align:center;>
+<div style="text-align:center;">
 <form method="post" action="/Controller/controller_inscription.php">
 
 	<input type="text" placeholder="Pseudo" name="id" pattern=".{5,}" required><br>
