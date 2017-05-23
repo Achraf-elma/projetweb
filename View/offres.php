@@ -6,10 +6,10 @@
 <html>
   <body>
 
-
+<div style="contenu">
     <h1>  Liste des Vaisselles en attente de plongeur </h1>
 
-<div style="contenu">
+
 <table>
 		<thead>
 			<tr>
