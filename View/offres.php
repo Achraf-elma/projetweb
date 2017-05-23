@@ -18,7 +18,6 @@
 				<th> Prix</th>
 				<th> Quantite de Vaisselle </th>
 				<th> Commentaire</th>
-				<th>  </th>
 				<th>Ville</th>
 				<th>Quartier</th>
 				<th>Intéressé ?</th>
@@ -48,7 +47,8 @@
 
 		<?php
 		}
-		$answer->closeCursor(); ?>
+		$answer->closeCursor();
+		?>
 	</tbody>
 	</table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

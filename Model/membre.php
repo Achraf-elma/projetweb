@@ -1,5 +1,20 @@
 <?php
-
+/*
+CREATE TABLE membre(
+	idmembre SERIAL NOT NULL,
+	pseudo VARCHAR(30) NOT NULL,
+	email VARCHAR NOT NULL,
+	mdp VARCHAR NOT NULL,
+	telephone VARCHAR,
+  sexe VARCHAR(15) CHECK(sexe IN('HOMME','FEMME')),
+	idville INTEGER,
+	idquartier INTEGER,
+	image VARCHAR, -- Lien image
+	CONSTRAINT membre_PK PRIMARY KEY(idmembre),
+	CONSTRAINT membre_of_ville_fk_FK FOREIGN KEY(idville) REFERENCES ville(idville),
+	CONSTRAINT membre_of_quartier_fk_FK FOREIGN KEY(idquartier) REFERENCES quartier(idquartier)
+);
+*/
 function recupIdMembre($pseudo)
 #Donnée: nom de la membre
 #Resultat: int correspondant a l'idMembre de la membre dont le nom est en parametre
