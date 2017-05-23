@@ -10,11 +10,25 @@ body {
       /*Supprimer les marges par défault des navigateurs */
 }
 
-table
-{
-	margin-left:auto;
-	margin-right:auto;
+// tableau
+
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+/////
 .contenu {
 
    width: 80%;

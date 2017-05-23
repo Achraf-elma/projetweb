@@ -11,7 +11,7 @@
 <table class=tableau>
 		<thead>
 			<tr>
-				
+
 				<th> Numero d'offre </th>
 				<th> Prix</th>
 				<th> Quantite de Vaisselle </th>
@@ -38,7 +38,7 @@
 		<?php
 		}
 		$answer->closeCursor(); ?>
-	</table>
+	</tbody>
 	</table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3/js/bootstrap.min.js"></script>
