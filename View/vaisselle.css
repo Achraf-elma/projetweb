@@ -13,9 +13,11 @@ body {
 // tableau
 
 table {
-  text-align: center;
+   text-align: center;
     border-collapse: collapse;
     width: 100%;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 td {
@@ -24,6 +26,7 @@ td {
 }
 
 th {
+    text-align: center;
     background-color: #4CAF50;
     color: white;
     text-align: left;
