@@ -8,8 +8,8 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Afficher / Cacher une boite div en javascript</title>
-    <link rel="stylesheet" media="all" title="style de la page" href="afficher_cacher_div.css" />
-    <script type="text/javascript" src="afficher_cacher_div.js"></script>
+
+    <script type="text/javascript" src="./View/afficher_cacher_div.js"></script>
     </head>
     <body>
     <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le texte</span>
