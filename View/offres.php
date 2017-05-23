@@ -11,7 +11,7 @@
 <table class=tableau>
 		<thead>
 			<tr>
-				<th > Vaisselles</th>
+				
 				<th> Numero d'offre </th>
 				<th> Prix</th>
 				<th> Quantite de Vaisselle </th>
