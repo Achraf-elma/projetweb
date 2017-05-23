@@ -19,7 +19,7 @@ function recupOffre(){
   require_once("pdo.php");
 
   $bd= connexion();
-  $answer = $bd->query("SELECT idoffre,prix, quantiteVaisselle,pseudo, nomVille , nomQuartier FROM offre, quartier, membre, ville WHERE membre.idville = ville.idville AND membre.idquartier = quartier.idquartier AND offre.idmembre = membre.idmembre;  ");
+  $answer = $bd->query("SELECT idoffre,prix, quantiteVaisselle,commentaire, pseudo, nomVille , nomQuartier FROM offre, quartier, membre, ville WHERE membre.idville = ville.idville AND membre.idquartier = quartier.idquartier AND offre.idmembre = membre.idmembre;  ");
   return $answer;
 }
 
