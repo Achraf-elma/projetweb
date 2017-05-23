@@ -38,8 +38,8 @@
 		   <td> <?php echo $donnees["prix"] . " €";  ?> </td>
 			 <td> <?php echo $donnees["quantitevaisselle"]; ?> </td>
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
-			 <td> <?php echo $donnees["nomVille"]; ?>  </td>
-			 <td> <?php echo $donnees["nomQuartier"]; ?>  </td>
+			 <td> <?php echo $donnees["nomville"]; ?>  </td>
+			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
 			 <td> <?php echo "Contactez" . $donnees["pseudo"]; ?>  </td>
 
 </tr>
