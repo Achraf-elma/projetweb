@@ -8,7 +8,7 @@
 
 
     <h1>  Liste des Vaisselles en attente de plongeur </h1>
-
+<table class=tableau>
 		<thead>
 			<tr>
 				<th > Vaisselles</th>
@@ -20,25 +20,25 @@
 			</tr>
 		</thead>
 
-	<tr>
+
 <?php
 		while($donnees = $answer->fetch())
 		{
   ?>
+<tr>
 
-
-			 <td>  <?php echo "Offre numero" . $donnees['idoffre'];  ?> </td>
+			 <td> <?php echo "Offre numero" . $donnees['idoffre'];  ?> </td>
 		   <td> <?php echo "PRIX " . $donnees["prix"]; ?> </td>
 			 <td> <?php echo $donnees["quantitevaisselle"]; ?> </td>
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
 
-
+</tr>
 
 		}
-		<?php 
+		<?php
 		$answer->closeCursor();
 ?>
-	</tr>
+	</table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3/js/bootstrap.min.js"></script>
   </body>
