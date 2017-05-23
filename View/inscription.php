@@ -16,7 +16,7 @@
 
 	 Sexe :
 	 <input type="radio" name= "sexe" value="HOMME"> Homme
-	 <input  type="radio" name="sexe" value="FEMME" > Femme
+	 <input  type="radio" name="sexe" value="FEMME" > Femme <br>
 	<input type="text" placeholder="Ville"  name="ville" required><br>
 	<input type="text" placeholder="Nom du quartier"  name="quartier" required><br>
 
