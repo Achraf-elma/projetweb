@@ -38,9 +38,9 @@
 		   <td> <?php echo $donnees["prix"] . " €";  ?> </td>
 			 <td> <?php echo $donnees["quantitevaisselle"]; ?> </td>
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
-			 <td> <?php echo $donnees["idville"]; ?>  </td>
-			 <td> <?php echo $donnees["idquartier"]; ?>  </td>
-			 <td> <?php echo "Contactez" . $donnees["idmembre"]; ?>  </td>
+			 <td> <?php echo $donnees["nomVille"]; ?>  </td>
+			 <td> <?php echo $donnees["nomQuartier"]; ?>  </td>
+			 <td> <?php echo "Contactez" . $donnees["pseudo"]; ?>  </td>
 
 </tr>
 
