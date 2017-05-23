@@ -33,10 +33,10 @@ function creerQuartierIfNotExists($nomQuartier, $idville)
 {
   require_once("pdo.php");
   $bd= connexion();
-echo "ok";
+
   if(!existeNomQuartier($nomQuartier, $idville))
   {
-    echo "ok";
+  
   $ajout = $bd->prepare( "INSERT INTO quartier(nomQuartier, idville) VALUES ('".$nomQuartier."', '".$idville."')");
   $ajout->execute();
   }

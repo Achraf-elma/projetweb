@@ -10,6 +10,29 @@ body {
       /*Supprimer les marges par défault des navigateurs */
 }
 
+.bouton
+{
+    color:#0000ff;
+    font-size:24px;
+    cursor:pointer;
+}
+.bouton:hover
+{
+    text-decoration:underline;
+}
+.texte
+{
+    border:1px solid #333333;
+    background:#eeeeee;
+    padding:10px;
+    color:#333333;
+}
+.texte:hover
+{
+    border:1px solid #000000;
+    background:#cccccc;
+    color:#000000;
+}
 
 table {
    text-align: center;
