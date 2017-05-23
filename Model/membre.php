@@ -15,6 +15,7 @@ CREATE TABLE membre(
 	CONSTRAINT membre_of_quartier_fk_FK FOREIGN KEY(idquartier) REFERENCES quartier(idquartier)
 );
 */
+
 function recupIdMembre($pseudo)
 #Donnée: nom de la membre
 #Resultat: int correspondant a l'idMembre de la membre dont le nom est en parametre
