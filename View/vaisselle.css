@@ -10,7 +10,11 @@ body {
       /*Supprimer les marges par défault des navigateurs */
 }
 
-
+table
+{
+	margin-left:auto;
+	margin-right:auto;
+}
 .contenu {
 
    width: 80%;
