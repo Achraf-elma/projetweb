@@ -51,17 +51,17 @@ function recupIdMembre($pseudo)
 	   require_once("../Model/pdo.php");
 		 require_once("../Model/quartier.php");
 		 require_once("../Model/membre.php");
- echo "olk";
-     $bd = connexion();
 
+     $bd = connexion();
+ echo "bd";
 		// On creer la membre / quartier si besoin. ET on recupere leur id respectif
 		 creerMembreIfNotExists($nomMembre);
 		 $idmembre = recupIdMembre($nomMembre);
-
+ echo "bd2";
 		 creerQuartierIfNotExists($nomQuartier, $idmembre);
 
 		 $idquartier = recupIdQuartier($nomQuartier, $idmembre);
-
+ echo "bd3";
   	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idmembre, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$sexe."', '$idmembre', '$idquartier')");
     $ajout->execute();
 
