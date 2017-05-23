@@ -10,9 +10,10 @@
     <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Voir le numéro</span>
     <div id="texte" class="texte">
 				Faut pas lire ca
+				</div>
     </script>
 
-	</div>
+
     </body>
 
 
