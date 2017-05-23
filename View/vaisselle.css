@@ -10,7 +10,6 @@ body {
       /*Supprimer les marges par défault des navigateurs */
 }
 
-// tableau
 
 table {
    text-align: center;
@@ -35,7 +34,7 @@ th {
 
 
 tr:nth-child(even){background-color: #f2f2f2}
-/////
+
 .contenu {
 
    width: 80%;
