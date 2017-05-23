@@ -1,5 +1,5 @@
 <?php
 
-	require_once("profil.php");
+	require_once("View/profil.php");
 
 ?>
