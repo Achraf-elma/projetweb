@@ -12,14 +12,14 @@
 		<thead>
 			<tr>
 				<th > Vaisselles</th>
-				<th> Numero </th>
+				<th> Numero d'offre </th>
 				<th> Prix</th>
 				<th> Quantite de Vaisselle </th>
 				<th> Commentaire</th>
 
 			</tr>
 		</thead>
-
+	<tbody>
 
 <?php
 		while($donnees = $answer->fetch())
@@ -27,8 +27,8 @@
   ?>
 <tr>
 
-			 <td> <?php echo "Offre numero" . $donnees['idoffre'];  ?> </td>
-		   <td> <?php echo "PRIX " . $donnees["prix"]; ?> </td>
+			 <td> <?php echo $donnees['idoffre'];  ?> </td>
+		   <td> <?php echo $donnees["prix"]; ?> </td>
 			 <td> <?php echo $donnees["quantitevaisselle"]; ?> </td>
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
 
@@ -38,6 +38,7 @@
 		<?php
 		}
 		$answer->closeCursor(); ?>
+	</table>
 	</table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3/js/bootstrap.min.js"></script>
