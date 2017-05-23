@@ -9,7 +9,7 @@
 
     <h1>  Liste des Vaisselles en attente de plongeur </h1>
 
-<div style="overflow-x:auto;">
+<div style="overflow-x:auto; text-align:center;">
 <table>
 		<thead>
 			<tr>
