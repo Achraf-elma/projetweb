@@ -35,6 +35,7 @@
 
 
 		}
+		<?php 
 		$answer->closeCursor();
 ?>
 	</tr>
