@@ -40,7 +40,7 @@
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
 			 <td> <?php echo $donnees["nomville"]; ?>  </td>
 			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
-			 <td> <?php echo "Contactez" . $donnees["pseudo"]; ?>  </td>
+			 <td> <?php echo "Contactez " . $donnees["pseudo"]; ?>  </td>
 
 </tr>
 
