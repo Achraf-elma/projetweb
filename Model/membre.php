@@ -51,7 +51,7 @@ function recupIdMembre($pseudo)
 	   require_once("../Model/pdo.php");
 		 require_once("../Model/quartier.php");
 		 require_once("../Model/membre.php");
-
+ echo "olk";
      $bd = connexion();
 
 		// On creer la membre / quartier si besoin. ET on recupere leur id respectif

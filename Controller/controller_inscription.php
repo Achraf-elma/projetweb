@@ -1,7 +1,7 @@
 <?php
- echo "oql";
+
 		require_once("../Model/membre.php");
- echo "aol";
+
 
 		// On recupere les donn2es du formualaire
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
@@ -14,7 +14,7 @@
 
 
 
-   echo "ol";
+
     // On appelle les fonctions qui vont nous retourner un membre si le pseudo/mail est deja pris
 		$existemail=existeMail($email);
 		$existpseudo=existePseudo($pseudo);
@@ -30,9 +30,9 @@
 		}
 		else
 		{
-       echo "ol";
-			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$telephone,$sexe,$ville, $quartier);
 
+			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$telephone,$sexe,$ville, $quartier);
+     echo "ol";
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
 
