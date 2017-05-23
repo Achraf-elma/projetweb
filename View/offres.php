@@ -30,7 +30,7 @@
 <tr>
 
 			 <td> <?php echo $donnees['idoffre'];  ?> </td>
-		   <td> <?php echo $donnees["prix"]; ?> </td>
+		   <td> <?php echo $donnees["prix"] . " €";  ?> </td>
 			 <td> <?php echo $donnees["quantitevaisselle"]; ?> </td>
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
 
@@ -46,7 +46,7 @@
     <script src="bootstrap-3/js/bootstrap.min.js"></script>
 
 
-</div>		
+</div>
   </body>
 </html>
 
