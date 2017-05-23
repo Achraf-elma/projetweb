@@ -20,6 +20,7 @@ table {
 }
 
 td {
+      text-align: center;
     text-align: left;
     padding: 8px;
 }
@@ -33,11 +34,12 @@ th {
 }
 
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){  text-align: center;background-color: #f2f2f2; }
 
 .contenu {
 
    width: 80%;
+     text-align: center;
    margin-right:auto;
    margin-left:auto;
 
