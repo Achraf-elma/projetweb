@@ -23,7 +23,7 @@ function existeNomQuartier($nomQuartier, $idville)
 
   $result = $bd->query("SELECT EXISTS (SELECT * FROM quartier WHERE nomQuartier='$nomQuartier' AND  idville=$idville) AS quartier_exists");
   $Quartier = $result->fetch();
-
+echo "ok2";
   return $Quartier['quartier_exists'];
 }
 
@@ -33,7 +33,7 @@ function creerQuartierIfNotExists($nomQuartier, $idville)
 {
   require_once("pdo.php");
   $bd= connexion();
-
+echo "ok";
   if(!existeNomQuartier($nomQuartier, $idville))
   {
   $ajout = $bd->prepare( "INSERT INTO quartier(nomQuartier, idville) VALUES ('".$nomQuartier."', '".$idville."')");
