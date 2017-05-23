@@ -1,5 +1,12 @@
-<?php
-
-	require_once("Controller/controller_page_index.php");
-
-?>
+<iframe
+ sandbox
+ seamless
+ src="votreannonce.html"
+ srcdoc="
+   <p>
+     Ce paragraphe est dans un bac à sable.
+   </p>
+ ">
+  Du contenu pour les navigateurs qui ne supportent pas
+  les iframes.
+</iframe>

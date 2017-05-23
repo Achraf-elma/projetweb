@@ -21,10 +21,10 @@
 
   <ul class="topnav">
 
-    <li><a class="active" href="#home">Accueil</a></li>
-    <li><a href="#about">Le principe</a></li>
-    <li><a href="#news">Offre de Vaisselle</a></li>
-    <li><a href="#contact">Postez une annonce</a></li>
+    <li><a class="active" href="index.php">Accueil</a></li>
+    <li><a href="principe.php">Le principe</a></li>
+    <li><a href="offres.php">Offre de Vaisselle</a></li>
+    <li><a href="votreannonce.php">Postez une annonce</a></li>
 
    <?php
     if (!isset($_COOKIE['id']))

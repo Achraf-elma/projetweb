@@ -18,6 +18,12 @@
 				<th> Prix</th>
 				<th> Quantite de Vaisselle </th>
 				<th> Commentaire</th>
+				<th>  </th>
+				<th>Ville</th>
+				<th>Quartier</th>
+				<th>Intéressé ?</th>
+
+
 
 			</tr>
 		</thead>
@@ -33,6 +39,9 @@
 		   <td> <?php echo $donnees["prix"] . " €";  ?> </td>
 			 <td> <?php echo $donnees["quantitevaisselle"]; ?> </td>
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
+			 <td> <?php echo $donnees["idville"]; ?>  </td>
+			 <td> <?php echo $donnees["idquartier"]; ?>  </td>
+			 <td> <?php echo "Contactez" $donnees["idmembre"]; ?>  </td>
 
 </tr>
 
