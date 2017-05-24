@@ -24,7 +24,7 @@
     //-->
     </script>
 <h3> Description </h3>
-<p> Habite à <?php echo $membre['nomville']; ?>
+<p> Habite à <?php echo $membre['nomville']; ?> <br>
 A propos de moi : "<?php echo $membre['description']; ?> "
 
 </p>

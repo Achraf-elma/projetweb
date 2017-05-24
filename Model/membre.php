@@ -102,7 +102,7 @@ function recupIdMembre($pseudo)
    require_once("pdo.php");
    $bd= connexion();
 
-   $result = $bd->query("SELECT membre.idmembre,pseudo,email, telephone, nomVille, positive,neutre, negatif FROM membre, ville, profil WHERE ville.idville = membre.idville AND profil.idmembre = membre.idmembre AND pseudo ='".$pseudo."'");
+   $result = $bd->query("SELECT membre.idmembre,pseudo,email, telephone, nomVille, positive,neutre, negatif, description FROM membre, ville, profil WHERE ville.idville = membre.idville AND profil.idmembre = membre.idmembre AND pseudo ='".$pseudo."'");
    $Membre=$result->fetch();
 
    return $Membre;
