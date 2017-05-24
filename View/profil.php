@@ -23,9 +23,13 @@
         afficher_cacher('texte');
     //-->
     </script>
+<h3> Description </h3>
+<p> Habite à <?php echo $membre['nomville']; ?>
+A propos de moi : "<?php echo $membre['description']; ?> "
 
+</p>
 <h3> Evaluation </h3>
-Avis : Positive : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membre['neutre']; ?>  Négatif : <?php echo $membre['negatif']; ?> 
+Avis : Positive : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membre['neutre']; ?>  Négatif : <?php echo $membre['negatif']; ?>
 <?php require_once("evaluation") ?>
 
 <p>  Offre en cours : </p>
