@@ -2,11 +2,10 @@
 
 
 require_once("Model/membre.php");
+  echo $_POST[id];
 
-  $idprofil =  $_POST[id];
-  $answer=dataMembre($idprofil);
+  //$answer=dataMembre($idprofil);
 
-  echo $idprofil;
 	//require_once("View/profil.php");
 
 ?>
