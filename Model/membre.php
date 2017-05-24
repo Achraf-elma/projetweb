@@ -66,7 +66,7 @@ function recupIdMembre($pseudo)
     $ajout->execute();
 
     $idmembre =recupIdMembre($pseudo);
-    $ajout2 = $bd->prepare( "INSERT INTO profil(idmembre, positive, neutre, negatif) VALUES ('".$idmembre."',0,0,0)");
+    $ajout2 = $bd->prepare( "INSERT INTO profil(idmembre, positive, neutre, negatif, description) VALUES ('".$idmembre."',0,0,0, 'Aucune description')");
     $ajout2->execute();
 
 	}
