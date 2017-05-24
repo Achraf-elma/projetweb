@@ -10,16 +10,11 @@ require_once("Model/membre.php");
 
 
 
-  		while($donnees = $answer->fetch())
-  		{
+
+  			  echo $answer['pseudo'];
 
 
 
-  			  echo $donnees['pseudo'];
-
-
-  		$answer->closeCursor();
-    }
 	//require_once("View/profil.php");
 
 
