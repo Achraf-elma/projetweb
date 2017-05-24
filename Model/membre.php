@@ -99,9 +99,9 @@ function recupIdMembre($pseudo)
    $bd= connexion();
 
    $result = $bd->query("SELECT idmembre,pseudo,email, telephone, nomVille FROM membre, ville WHERE ville.idville = membre.idville AND pseudo ='".$pseudo."'");
-   $idMembre=$result->fetch();
+   $Membre=$result->fetch();
 
-   return $idMembre["idmembre"];
+   return $Membre;
  }
 
 
