@@ -35,11 +35,11 @@ Avis : Positive : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membr
 <?php
 if (isset($_COOKIE['id']))
 {
-
+   include_once("evaluation.php");
 }
 else
 {
-	require_once("evaluation.php");
+	
 }
  ?>
 
