@@ -15,7 +15,7 @@ require_once("Model/membre.php");
 
 
 
-	//require_once("View/profil.php");
+	require_once("View/profil.php");
 
 
 
