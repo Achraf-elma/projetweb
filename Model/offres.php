@@ -23,15 +23,7 @@ function recupOffre(){
   return $answer;
 }
 
-function recupDateActuelle()
-{
-  require_once("pdo.php");
-  $bd= connexion();
 
-  $result = $bd->query("SELECT CURRENT_TIMESTAMP;");
-  $temps=$result->fetch();
-  return $temps;
-}
 function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
   #Donnée: ensemble de donnees pour creer l'offre
   #Post: ajoute l'offre à la base de données
@@ -48,7 +40,7 @@ function OffreDuMembre($idmembre){
        #Post: retourne l'offre de vaisselle du membre sinon renvoie vide
 
        require_once("../Model/pdo.php");
-       echo "yes";
+  
           $bd = connexion();
 
        $result = $bd->query("SELECT * FROM offre WHERE idmembre='".$idmembre."'");
