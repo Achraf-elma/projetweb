@@ -7,7 +7,7 @@
 
 
 		<p>  <?php echo $message ?>   </p>
-    <a  class="buttonVaisselle" type="button"  href="index.php"> Retour</a>
+    <a  class="buttonVaisselle" type="button"  href="javascript:history.back()"> Retour</a>
 		<div style="text-align:center">
 
 		</div>

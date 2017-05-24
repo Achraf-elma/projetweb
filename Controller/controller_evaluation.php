@@ -6,8 +6,6 @@
 		$commentaire=$_POST['commentaire'];
     $pseudo = $_POST['pseudo'];
 
-    echo $pseudo;
-
 		if (isset($note))
 		{
 			echo $_COOKIE[id];
