@@ -7,20 +7,18 @@
 
 
     <body>
-
-			<?php while($donnees = $answer->fetch()) {
-		  ?>
- Profil de
-
-  <?php echo $donnees["pseudo"]; ?>
-
+			<?php
+					while($donnees = $answer->fetch())
+					{
+			  ?>
+			 <?php echo $donnees['pseudo'];  ?>
 
 
 
-		<?php
-		}
-		$answer->closeCursor();
-		?>
+					<?php
+					}
+					$answer->closeCursor();
+					?>
     </body>
 
 
