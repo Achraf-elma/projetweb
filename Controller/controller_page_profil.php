@@ -7,7 +7,20 @@ require_once("Model/membre.php");
   $idprofil ="Admin";
   $answer=dataMembre($idprofil);
   echo $idprofil;
-	require_once("View/profil.php");
+
+
+
+  		while($donnees = $answer->fetch())
+  		{
+
+
+
+  			 <td> <?php echo $donnees['pseudo'];
+
+
+  		$answer->closeCursor();
+    }
+	//require_once("View/profil.php");
 
 
 
