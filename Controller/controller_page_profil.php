@@ -15,7 +15,7 @@ require_once("Model/membre.php");
 
 
 
-  			 <td> <?php echo $donnees['pseudo'];
+  			  echo $donnees['pseudo'];
 
 
   		$answer->closeCursor();
