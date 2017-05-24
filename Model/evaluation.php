@@ -15,7 +15,7 @@
 
 
 
-  	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idprofil_evalue, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$commentaire."')");
+  	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idprofil_evalue,note, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$note."','".$commentaire."')");
     $ajout->execute();
 
     switch ($note) {
