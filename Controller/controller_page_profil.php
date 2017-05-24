@@ -6,14 +6,6 @@ require_once("Model/membre.php");
 
   $idprofil ="Admin";
   $membre=dataMembre($idprofil);
-  echo $idprofil;
-
-
-
-
-  			  echo $membre['pseudo'];
-
-
 
 	require_once("View/profil.php");
 
