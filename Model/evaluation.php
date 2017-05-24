@@ -6,10 +6,12 @@
 	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
 	#Post: ajoute l'étudiant à la base de données
 	{
-
+		require_once("../Model/pdo.php");
+		$bd = connexion();
+    require_once("../Model/membre.php");
      $idprofil_evalue = recupIdMembre($pseudo);
-	   require_once("../Model/pdo.php");
-     $bd = connexion();
+		 echo $idprofil_evalue;
+
 
 
 
