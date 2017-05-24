@@ -4,15 +4,15 @@
 
 		$note=$_POST['note'];
 		$commentaire=$_POST['commentaire'];
-
+   $pseudo = $_POST['pseudo'];
 
 
 
 		if (isset($note))
 		{
 			echo $_COOKIE[id];
-			echo $_GET[id];
-			ajoutEval($_COOKIE[id],$_GET[id], $note,$commentaire);
+		  
+			ajoutEval($_COOKIE[id],$pseudo, $note,$commentaire);
 		  //header("Location: ../validation.php?message=Merci_pour_votre_avis");
 		}
 		else
