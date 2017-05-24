@@ -65,6 +65,10 @@ function recupIdMembre($pseudo)
   	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$sexe."', '$idville', '$idquartier')");
     $ajout->execute();
 
+    $idmembre =recupIdMembre($pseudo)
+    $ajout2 = $bd->prepare( "INSERT INTO profil(idmembre, positive, neutre, negatif) VALUES ('".$idmembre."',0,0,0)");
+    $ajout2->execute();
+
 	}
 
 	function existeMail($email)
@@ -98,7 +102,7 @@ function recupIdMembre($pseudo)
    require_once("pdo.php");
    $bd= connexion();
 
-   $result = $bd->query("SELECT idmembre,pseudo,email, telephone, nomVille FROM membre, ville WHERE ville.idville = membre.idville AND pseudo ='".$pseudo."'");
+   $result = $bd->query("SELECT membre.idmembre,pseudo,email, telephone, nomVille, positive,neutre, negatif FROM membre, ville, profil WHERE ville.idville = membre.idville AND profil.idmembre = membre.idmembre AND pseudo ='".$pseudo."'");
    $Membre=$result->fetch();
 
    return $Membre;

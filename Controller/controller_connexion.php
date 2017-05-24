@@ -16,7 +16,7 @@
 
 
 			setcookie("id", $idmembre, time()+(3600),"/");
-		  header("Location: ../validation.php?message=Vous_etes_bien_connecte&lien=test");
+		  header("Location: ../validation.php?message=Vous_etes_bien_connecte");
 		}
 		else
 		{

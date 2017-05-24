@@ -24,6 +24,10 @@
     //-->
     </script>
 
+<h3> Evaluation </h3>
+Avis : Positive : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membre['neutre']; ?>  Négatif : <?php echo $membre['negatif']; ?> 
+<?php require_once("evaluation") ?>
+
 <p>  Offre en cours : </p>
  <?php require_once("offreencours.php"); ?>
 
