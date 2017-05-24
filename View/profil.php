@@ -39,7 +39,7 @@ if (isset($_COOKIE['id']))
 }
 else
 {
-	
+	echo "Connectez-vous pour laisser un avis";
 }
  ?>
 
