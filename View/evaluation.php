@@ -1,8 +1,8 @@
 
     <div style="text-align:center;" >
 
-<?php echo membre['membre.idmembre']; ?>
-    <form method="post" action="../Controller/controller_evaluation.php?id=<? membre['idmembre']; ?> ">
+<?php echo $membre['membre.idmembre']; ?>
+    <form method="post" action="../Controller/controller_evaluation.php?id=<? $membre['idmembre']; ?> ">
 
       AVIS SUR CE MEMBRE :
       <input type="radio" name= "note" value="Positif"> Positif
