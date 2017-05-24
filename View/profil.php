@@ -24,6 +24,8 @@
     //-->
     </script>
 
+<p>  Offre en cours : </p>
+ <?php require_once("offreencours.php"); ?>
 
 </body>
 
