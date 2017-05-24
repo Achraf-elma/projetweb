@@ -2,7 +2,7 @@
     <div style="text-align:center;" >
 
 
-    <form method="post" action="../Controller/controller_evaluation.php?id=<? membre[idmembre] ?> ">
+    <form method="post" action="../Controller/controller_evaluation.php?id=<? membre['idmembre']; ?> ">
 
       AVIS SUR CE MEMBRE :
       <input type="radio" name= "note" value="Positif"> Positif
