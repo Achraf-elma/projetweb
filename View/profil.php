@@ -11,7 +11,7 @@
 <div class=profil>
 
 
-      <p> Habite à <?php echo $membre['ville']; ?> </p>
+      <p> Habite à <?php echo $membre['nomville']; ?> </p>
 
        <script type="text/javascript" src="./View/afficher_cacher_div.js"></script>
     <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le texte</span>
