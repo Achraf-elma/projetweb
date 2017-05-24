@@ -13,7 +13,7 @@
     <body>
 
 
- Profil de <?php echo $membre["pseudo"]; ?>
+ Profil de <?php echo $membre['pseudo']; ?>
 
 
        <script type="text/javascript" src="./View/afficher_cacher_div.js"></script>
