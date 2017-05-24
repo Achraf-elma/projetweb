@@ -9,14 +9,26 @@
 
 
 	   require_once("../Model/pdo.php");
-
-
      $bd = connexion();
 
 
-  	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idprofil_evalue, note, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$note."','".$commentaire."')");
+
+  	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idprofil_evalue, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$commentaire."')");
     $ajout->execute();
 
+    switch ($note) {
+        case 'Positif':
+        $bd->exec("UPDATE evaluation SET positive = positive + 1 WHERE idprofil_evalue ='". $idmembre ."' ");
+        break;
+        
+        case 'Neutre':
+        $bd->exec("UPDATE evaluation SET neutre = neutre + 1 WHERE idprofil_evalue ='". $idmembre ."' ");      break;
+        break;
+
+        case 'Negatif':
+        $bd->exec("UPDATE negatif SET negatif = negatif + 1 WHERE idprofil_evalue ='". $idmembre ."' ");
+        break;
+    }
 
 	}
 
