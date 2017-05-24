@@ -25,7 +25,7 @@
     </script>
 
 <p>  Offre en cours : </p>
- <?php include_once("offreencours.php"); ?>
+ <?php require_once("offreencours.php"); ?>
 
 </body>
 
