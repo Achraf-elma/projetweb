@@ -2,7 +2,7 @@
     <div style="text-align:center;" >
 
   <?php echo $membre['pseudo']; ?>
-    <form method="post" action="../Controller/controller_evaluation.php?id=<?echo ' .$membre['pseudo'] . ' ;?> ">
+    <form method="post" action="../Controller/controller_evaluation.php?id=">
 
       AVIS SUR CE MEMBRE :
       <input type="radio" name= "note" value="Positif"> Positif
