@@ -1,7 +1,7 @@
 
     <div style="text-align:center;" >
 
-
+  <? echo $membre['pseudo']; ?>
     <form method="post" action="../Controller/controller_evaluation.php?id=<?' .$membre['pseudo'] . ' ?> ">
 
       AVIS SUR CE MEMBRE :
