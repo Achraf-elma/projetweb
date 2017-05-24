@@ -14,7 +14,7 @@
 
 
     <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le texte</span>
-    <div style="text-align:center" id="texte" class="texte">
+    <div style="text-align:center; width:10%;" id="texte" class="texte">
         0651293170
     </div>
     <script type="text/javascript">
