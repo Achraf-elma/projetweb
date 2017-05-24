@@ -1,11 +1,11 @@
 <?php
 
-echo "blabla";
-//require_once("Model/membre.php");
+
+require_once("Model/membre.php");
   //echo $_POST[id];
-
-  //$answer=dataMembre($idprofil);
-
+$idprofil ="Admin";
+  $answer=dataMembre($idprofil);
+  echo $idprofil;
 	//require_once("View/profil.php");
 
 ?>
