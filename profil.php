@@ -1,5 +1,5 @@
 <?php
-  echo $_POST[id];
+  echo $_GET[id];
 	//require_once("Controller/controller_page_profil.php");
 
 ?>
