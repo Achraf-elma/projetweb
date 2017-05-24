@@ -10,7 +10,7 @@
 
 		if (isset($note))
 		{
-			ajoutEval($_COOKIE[id],$_GET[id]$note,$commentaire);
+			ajoutEval($_COOKIE[id],$_GET[id], $note,$commentaire);
 		  header("Location: ../validation.php?message=Merci_pour_votre_avis");
 		}
 		else
