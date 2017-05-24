@@ -2,7 +2,7 @@
 
 
 require_once("Model/membre.php");
-  echo $_POST[id];
+  echo $_GET[id];
 
   $idprofil ="Admin";
   //$membre=dataMembre($idprofil);
