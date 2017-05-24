@@ -22,7 +22,7 @@
 		{
       $id = $_COOKIE['id'];
 			creerOffre($prix,$quantite,$id,$commentaire);
-      header("Location: ../validation.php?message=Votre_annonce_est_poste?lien=offres.php");
+      header("Location: ../validation.php?message=Votre_annonce_est_postée");
 		}
 
  ?>
