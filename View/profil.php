@@ -12,16 +12,30 @@
     </head>
     <body>
 
+			<?php while($donnees = $answer->fetch())
+			{
+				?>
+ Profil de <?php echo $donnees["pseudo"]; ?>
+
+
 
     <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le texte</span>
     <div style="text-align:center; width:10%;" id="texte" class="texte">
-        0651293170
+        <?php echo $donnees["telephone"]; ?>
     </div>
     <script type="text/javascript">
     //<!--
         afficher_cacher('texte');
     //-->
     </script>
+
+
+
+
+		<?php
+		}
+		$answer->closeCursor();
+		?>
     </body>
 </html>
 
