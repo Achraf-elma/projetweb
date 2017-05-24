@@ -6,6 +6,6 @@ require_once("Model/membre.php");
 $idprofil ="Admin";
   $answer=dataMembre($idprofil);
   echo $idprofil;
-	//require_once("View/profil.php");
+	require_once("View/profil.php");
 
 ?>

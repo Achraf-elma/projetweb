@@ -100,7 +100,7 @@ function recupIdMembre($pseudo)
 
    $result = $bd->query("SELECT idmembre,pseudo,email, telephone, nomVille FROM membre, ville WHERE ville.idville = membre.idville AND pseudo ='".$pseudo."'");
    $idMembre=$result->fetch();
-   echo $idMembre["idmembre"];
+
    return $idMembre["idmembre"];
  }
 
