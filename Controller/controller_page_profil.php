@@ -2,12 +2,12 @@
 
 
 require_once("Model/membre.php");
-  echo $_GET[id];
 
-  $idprofil ="Admin";
-  //$membre=dataMembre($idprofil);
 
-	//require_once("View/profil.php");
+  $idprofil =$id;
+$membre=dataMembre($idprofil);
+
+	require_once("View/profil.php");
 
 
 
