@@ -65,7 +65,7 @@ function recupIdMembre($pseudo)
   	$ajout = $bd->prepare( "INSERT INTO membre(pseudo, email, mdp, telephone, sexe, idville, idquartier) VALUES ('".$pseudo."','".$email."','".$pass_hache."','".$telephone."','".$sexe."', '$idville', '$idquartier')");
     $ajout->execute();
 
-    $idmembre =recupIdMembre($pseudo)
+    $idmembre =recupIdMembre($pseudo);
     $ajout2 = $bd->prepare( "INSERT INTO profil(idmembre, positive, neutre, negatif) VALUES ('".$idmembre."',0,0,0)");
     $ajout2->execute();
 
