@@ -28,6 +28,7 @@ function recupIdMembre($pseudo)
   echo $idMembre["idmembre"];
   return $idMembre["idmembre"];
 }
+
 	function verifMdp($pseudo)
 	#Donnnée: Email de l'étudiant connecté
 	#Résultat: Renvoie le mot de passe de l'étudiant
@@ -90,6 +91,18 @@ function recupIdMembre($pseudo)
 				 return $etu;
  }
 
+ function dataMembre($pseudo)
+ #Donnée: nom de la membre
+ #Resultat: int correspondant a l'idMembre de la membre dont le nom est en parametre
+ {
+   require_once("pdo.php");
+   $bd= connexion();
+
+   $result = $bd->query("SELECT idmembre,pseudo,email, telephone, nomVille FROM membre, ville WHERE ville.idville = membre.idville AND pseudo ='".$pseudo."'");
+   $idMembre=$result->fetch();
+   echo $idMembre["idmembre"];
+   return $idMembre["idmembre"];
+ }
 
 
 ?>
