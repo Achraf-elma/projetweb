@@ -28,12 +28,6 @@
     </script>
 
 
-
-
-		<?php
-		}
-		$answer->closeCursor();
-		?>
     </body>
 </html>
 
