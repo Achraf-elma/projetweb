@@ -30,7 +30,7 @@ A propos de moi : "<?php echo $membre['description']; ?> "
 </p>
 <h3> Evaluation </h3>
 Avis : Positif : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membre['neutre']; ?>  Négatif : <?php echo $membre['negatif']; ?> <br>
-<? echo $membre['membre.idmembre']; ?>
+<? echo $membre['ID']; ?>
 
 <?php
 if (isset($_COOKIE['id']))
