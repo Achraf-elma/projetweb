@@ -20,15 +20,15 @@
 
     switch ($note) {
         case 'Positif':
-        $bd->exec("UPDATE evaluation SET positive = positive + 1 WHERE idprofil_evalue ='". $idmembre ."' ");
+        $bd->exec("UPDATE profil SET positive = positive + 1 WHERE idmembre ='". $idprofil_evalue ."' ");
         break;
 
         case 'Neutre':
-        $bd->exec("UPDATE evaluation SET neutre = neutre + 1 WHERE idprofil_evalue ='". $idmembre ."' ");      break;
+        $bd->exec("UPDATE profil SET neutre = neutre + 1 WHERE idmembre ='". $idprofil_evalue ."' ");      break;
         break;
 
         case 'Negatif':
-        $bd->exec("UPDATE negatif SET negatif = negatif + 1 WHERE idprofil_evalue ='". $idmembre ."' ");
+        $bd->exec("UPDATE profil SET negatif = negatif + 1 WHERE idmembre ='". $idprofil_evalue ."' ");
         break;
     }
 
