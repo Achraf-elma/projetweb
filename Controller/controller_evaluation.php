@@ -15,7 +15,7 @@
 		elseif ($_COOKIE[id]==$pseudo) {
 			  header("Location: ../erreur.php?message=Vous_ne_pouvez_pas_donner_votre_avis_sur_vous_meme");
 		}
-		elseif (!is_null($Eval['idmembre_juge']) {
+		elseif (!is_null($Eval['idmembre_juge'] ) ) {
 			  header("Location: ../erreur.php?message=Vous_avez_deja_noté_ce_membre");
 		}
 		else
