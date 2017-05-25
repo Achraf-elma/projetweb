@@ -52,7 +52,7 @@
    #Données: idquestion, identifiant de la question(ou groupe de proposition)
    #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
    require_once("Model/pdo.php");
-  echo "yes";
+
    $bd= connexion();
 	 require_once("Model/membre.php");
 		$idprofil_evalue = recupIdMembre($pseudo);
