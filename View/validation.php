@@ -3,13 +3,11 @@
  ?>
 
 <body>
-		<p>  <?php echo $message ?>   </p>
-    <a  class="buttonVaisselle" type="button"  href="index.php"> Retour</a>
+		<h2 style="align-text:center;">  <?php echo $message ?>   </h2>
+    <a  class="buttonVaisselle" type="button"  href="index.php"> Retour à la page d'accueil</a>
+</body>
 
 
-	</body>
-
-
-	<?php
+<?php
 	    require_once("footer.php");
-	 ?>
+?>
