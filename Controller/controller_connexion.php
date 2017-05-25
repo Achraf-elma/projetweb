@@ -14,14 +14,15 @@
 
 			$idmembre = recupIdMembre($pseudo);
 
-       if($pseudo === "Admin") {
-				 setcookie("id", "admin", time()+(3600),"/");
-			 }
-			 else {
-				 setcookie("id", $idmembre, time()+(3600),"/");
-			 }
-          echo $_COOKIE['id'];
-		//  header("Location: ../validation.php?message=Vous_etes_bien_connecte");
+		       if($pseudo === "Admin") {
+						 setcookie("id", "admin", time()+(3600),"/");
+						 header("Location: ../validation.php?message=Vous_êtes_bien_connecté_en_tant_que_Admin");
+					 }
+					 else {
+						 setcookie("id", $idmembre, time()+(3600),"/");
+						 header("Location: ../validation.php?message=Vous_êtes_bien_connecté");
+					 }
+
 		}
 		else
 		{
