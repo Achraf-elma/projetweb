@@ -35,12 +35,13 @@
  #Donnée: pseudo
  #Résultat: Renvoie le membre dont le pseudo est la chaine de char donnée en paramètre sinon renvoie un vide
  {
-	 require_once("pdo.php");
+	 require_once("../Model/pdo.php");
 				 $bd = connexion();
 				 require_once("../Model/membre.php");
 		      $idprofil_evalue = recupIdMembre($pseudo);
 				 $result = $bd->query("SELECT * FROM evaluation WHERE idmembre_juge='".$idmembre_juge."', idmembre_evalue='$idprofil_evalue'");
-			 	 $etu=$result->fetch();
+
+				 $etu=$result->fetch();
 		 		 $result->closeCursor();
 				 return $etu;
  }
