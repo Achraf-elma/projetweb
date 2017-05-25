@@ -17,6 +17,8 @@
 	<tbody>
 
 <?php
+
+    $answer = recupOffreDuMembre($membre['pseudo']);
 		while($donnees = $answer->fetch())
 		{
   ?>
@@ -28,7 +30,7 @@
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
 			 <td> <?php echo $donnees["nomville"]; ?>  </td>
 			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
-			
+
 </tr>
 
 
