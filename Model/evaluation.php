@@ -10,12 +10,12 @@
 		$bd = connexion();
     require_once("../Model/membre.php");
      $idprofil_evalue = recupIdMembre($pseudo);
-		 echo $idprofil_evalue;
 
 
 
 
-  	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idprofil_evalue,note, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$note."','".$commentaire."')");
+
+  	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idmembre_evalue,note, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$note."','".$commentaire."')");
     $ajout->execute();
 
     switch ($note) {
