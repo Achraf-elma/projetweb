@@ -36,9 +36,9 @@ function recupOffreDuMembre($pseudo){
 function supprimeOffreDuMembre($idmembre){
   #Données: idquestion, identifiant de la question(ou groupe de proposition)
   #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
-  require_once("pdo.php");
+  require_once("../Model/pdo.php");
   $bd= connexion();
-  $bd->exec(" DELETE FROM OFFRE WHERE idmembre = '$idmembre'; ");
+  $bd->exec(" DELETE FROM OFFRE WHERE idmembre = '$idmembre' ;");
 
 }
 
