@@ -21,8 +21,11 @@
 				<th>Ville</th>
 				<th>Quartier</th>
 				<th>Intéressé ?</th>
-
-
+		<?php
+    if($_COOKIE['id'=='admin']){
+			echo "<th> Supprimer </th>";
+		}
+     ?>
 
 			</tr>
 		</thead>
@@ -41,6 +44,9 @@
 			 <td> <?php echo $donnees["nomville"]; ?>  </td>
 			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
 			 <td> <?php echo 'Contactez <a href="../profil.php?id=' .$donnees["pseudo"] . '">' .$donnees["pseudo"] ."</a>"; ?>  </td>
+	 <?php  if($_COOKIE['id'=='admin']) { echo '<a href="controller_supprime.php"> X </a> ;'}?>
+
+
 
 </tr>
 
