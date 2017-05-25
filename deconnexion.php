@@ -1,5 +1,4 @@
 <?php
- setcookie("id", '',0,"/");
- echo $_COOKIE['id'];
-  echo "vous etes deco";
+require_once("Controller/controller_deconnexion.php");
+
  ?>
