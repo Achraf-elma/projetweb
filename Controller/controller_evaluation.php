@@ -14,7 +14,7 @@
 			header("Location: ../erreur.php?message=Precisez_une_note_svp");
 
 		}
-		elseif ($_COOKIE[id]==$pseudo) {
+		elseif ($_COOKIE[id]==$id_evalue) {
 			  header("Location: ../erreur.php?message=Vous_ne_pouvez_pas_donner_votre_avis_sur_vous_meme");
 		}
 		elseif (!is_null($Eval['idmembre_juge'] ) ) {
