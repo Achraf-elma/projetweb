@@ -37,11 +37,11 @@
  {
 	 require_once("../Model/pdo.php");
 				 $bd = connexion();
-				 echo "ok";
+				
 				 require_once("../Model/membre.php");
 		      $idprofil_evalue = recupIdMembre($pseudo);
 				 $result = $bd->query("SELECT * FROM evaluation WHERE idmembre_juge='".$idmembre_juge."' AND idmembre_evalue='".$idprofil_evalue."'");
-   echo "yeay";
+
 				 $etu=$result->fetch();
 		 		 $result->closeCursor();
 				 return $etu;
@@ -51,7 +51,7 @@
  function recupEvalDuMembre($pseudo){
    #Données: idquestion, identifiant de la question(ou groupe de proposition)
    #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
-   require_once("pdo.php");
+   require_once("../Model/pdo.php");
   echo "yes";
    $bd= connexion();
 	 require_once("../Model/membre.php");
