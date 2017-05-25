@@ -1,12 +1,14 @@
 <?php
 
 	require_once("../Model/evaluation.php");
+	require_once("../Model/membre.php");
  echo "oui";
 		$note=$_POST['note'];
 		$commentaire=$_POST['commentaire'];
     $pseudo = $_POST['pseudo'];
 
   $Eval=existeEval($_COOKIE[id], $pseudo);
+	$id_evalue = recupIdMembre($pseudo);
 		if (!isset($note) )
 		{
 			header("Location: ../erreur.php?message=Precisez_une_note_svp");
