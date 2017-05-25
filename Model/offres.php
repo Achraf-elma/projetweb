@@ -32,6 +32,16 @@ function recupOffreDuMembre($pseudo){
   return $answer;
 }
 
+
+function supprimeOffreDuMembre($idmembre){
+  #Données: idquestion, identifiant de la question(ou groupe de proposition)
+  #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
+  require_once("pdo.php");
+  $bd= connexion();
+  $bd->exec(" DELETE FROM OFFRE WHERE idmembre = '$idmembre'; ");
+
+}
+
 function creerOffre($prix,$quantiteVaisselle, $idmembre,$commentaire){
   #Donnée: ensemble de donnees pour creer l'offre
   #Post: ajoute l'offre à la base de données
