@@ -33,6 +33,16 @@
 
 			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$telephone,$sexe,$ville, $quartier);
 
+						$idmembre = recupIdMembre($pseudo);
+
+					       if($pseudo === "Admin") {
+									 setcookie("id", 0, time()+(3600),"/");
+
+								 }
+								 else {
+									 setcookie("id", $idmembre, time()+(3600),"/");
+									
+								 }
 			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
 		}
 
