@@ -1,13 +1,11 @@
 <?php
 
     require_once("../Model/offres.php");
+
     $prix=!empty($_POST["prix"]) ? $_POST['prix'] : NULL;
     $quantite=!empty($_POST["quantite"]) ? $_POST["quantite"] : NULL;
     $commentaire=!empty($_POST["message"]) ? $_POST["message"] : " ";
-
-
-
-   $existeOffreDuMembre = OffreDuMembre($_COOKIE['id']);
+    $existeOffreDuMembre = OffreDuMembre($_COOKIE['id']);
 
     if (empty($prix) || !is_numeric($prix) )
 		{

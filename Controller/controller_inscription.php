@@ -3,7 +3,7 @@
 		require_once("../Model/membre.php");
 
 
-		// On recupere les donn2es du formualaire
+		// On recupere les données du formualaire
 		$pseudo= !empty($_POST["id"]) ? $_POST["id"] : NULL;
 		$email=  !empty($_POST["email"]) ? $_POST["email"] : NULL;
 		$mdp= !empty($_POST["mdp"]) ? $_POST["mdp"] : NULL;
@@ -33,17 +33,17 @@
 
 			ajoutMembre($pseudo,$email, sha1(sha1($mdp)),$telephone,$sexe,$ville, $quartier);
 
-						$idmembre = recupIdMembre($pseudo);
+			$idmembre = recupIdMembre($pseudo);
 
-					       if($pseudo === "Admin") {
-									 setcookie("id", 0, time()+(3600),"/");
+			if($pseudo === "Admin") {
+			 setcookie("id", 0, time()+(3600),"/");
 
-								 }
-								 else {
-									 setcookie("id", $idmembre, time()+(3600),"/");
-									
-								 }
-			header("Location: ../validation.php?message=Inscription_réussie&lien=test");
+			}
+			else {
+			 setcookie("id", $idmembre, time()+(3600),"/");
+
+			}
+			header("Location: ../validation.php?message=Inscription_réussie");
 		}
 
 ?>

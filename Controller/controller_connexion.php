@@ -7,14 +7,11 @@
 
 		$mdpBD=verifMdp($pseudo);
 
-
-		if ($mdpBD['mdp'] == $mdp)
+    if ($mdpBD['mdp'] == $mdp)
 		{
+          	$idmembre = recupIdMembre($pseudo);
 
-
-			$idmembre = recupIdMembre($pseudo);
-
-		       if($pseudo === "Admin") {
+		       if($pseudo === "Admin") { /* connexion admin */
 						 setcookie("id", 0, time()+(3600),"/");
 						 header("Location: ../validation.php?message=Vous_êtes_bien_connecté_en_tant_que_Admin");
 					 }
@@ -26,7 +23,7 @@
 		}
 		else
 		{
-			header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_errone");
+			header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_érroné");
 		}
 
 ?>
