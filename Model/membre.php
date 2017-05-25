@@ -25,7 +25,7 @@ function recupIdMembre($pseudo)
 
   $result = $bd->query("SELECT idmembre FROM membre WHERE pseudo ='".$pseudo."'");
   $idMembre=$result->fetch();
-  echo $idMembre["idmembre"];
+  
   return $idMembre["idmembre"];
 }
 
