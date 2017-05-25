@@ -37,6 +37,7 @@
  {
 	 require_once("../Model/pdo.php");
 				 $bd = connexion();
+				 echo "ok";
 				 require_once("../Model/membre.php");
 		      $idprofil_evalue = recupIdMembre($pseudo);
 				 $result = $bd->query("SELECT * FROM evaluation WHERE idmembre_juge='".$idmembre_juge."', idmembre_evalue='$idprofil_evalue'");
