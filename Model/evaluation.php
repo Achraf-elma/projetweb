@@ -41,7 +41,7 @@
 				 require_once("../Model/membre.php");
 		      $idprofil_evalue = recupIdMembre($pseudo);
 				 $result = $bd->query("SELECT * FROM evaluation WHERE idmembre_juge='".$idmembre_juge."', idmembre_evalue='$idprofil_evalue'");
-
+   echo "yeay";
 				 $etu=$result->fetch();
 		 		 $result->closeCursor();
 				 return $etu;
