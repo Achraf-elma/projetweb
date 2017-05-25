@@ -11,10 +11,6 @@
     require_once("../Model/membre.php");
      $idprofil_evalue = recupIdMembre($pseudo);
 
-
-
-
-
   	$ajout = $bd->prepare( "INSERT INTO evaluation(idmembre_juge, idmembre_evalue,note, commentaire) VALUES ('".$idmembre_juge."','".$idprofil_evalue."','".$note."','".$commentaire."')");
     $ajout->execute();
 
@@ -34,4 +30,18 @@
 
 	}
 
+
+	function existePseudo($idmembre_juge, $pseudo)
+ #Donnée: pseudo
+ #Résultat: Renvoie le membre dont le pseudo est la chaine de char donnée en paramètre sinon renvoie un vide
+ {
+	 require_once("pdo.php");
+				 $bd = connexion();
+				 require_once("../Model/membre.php");
+		      $idprofil_evalue = recupIdMembre($pseudo);
+				 $result = $bd->query("SELECT * FROM evaluation WHERE idmembre_juge='".$idmembre_juge."', idmembre_evalue='$idprofil_evalue'");
+			 	 $etu=$result->fetch();
+		 		 $result->closeCursor();
+				 return $etu;
+ }
 ?>
