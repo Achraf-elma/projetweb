@@ -9,7 +9,8 @@
       <input  type="radio" name="note" value="NEUTRE" > Neutre <br>
       <input  type="radio" name="note" value="NEGATIF" > Négatif <br>
 
-  <span>Commentaire</span><textarea name="commentaire" class="textarea-field"></textarea></label>
+    <label for="commentaire">Commentaire</label><br/>
+   <textarea name="commentaire" id="commentaire"></textarea>
   <input type="hidden" name="pseudo" value=<?php echo $membre['pseudo']; ?> />
 
 			<input  class="buttonVaisselle" type="submit" value="Notez " class="connectionButton"><br>
