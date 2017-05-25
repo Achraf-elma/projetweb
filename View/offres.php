@@ -22,7 +22,7 @@
 				<th>Quartier</th>
 				<th>Intéressé ?</th>
 		<?php
-    if($_COOKIE['id'] =='admin'){
+    if($_COOKIE['id'] =='0'){
 			echo "<th> Supprimer </th>";
 		}
      ?>
@@ -44,7 +44,7 @@
 			 <td> <?php echo $donnees["nomville"]; ?>  </td>
 			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
 			 <td> <?php echo 'Contactez <a href="../profil.php?id=' .$donnees["pseudo"] . '">' .$donnees["pseudo"] ."</a>"; ?>  </td>
-	 <?php  if($_COOKIE['id'] == 'admin') {
+	 <?php  if($_COOKIE['id'] == '0') {
 
 
 		 echo ' <td> <a href="supprime.php?id=' .$donnees["pseudo"] . '" onclick="return confirm('Etes-vous sûr de supprimer?');> X </a> </td>';}?>
