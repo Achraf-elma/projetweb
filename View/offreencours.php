@@ -8,7 +8,7 @@
 				<th> Commentaire</th>
 				<th>Ville</th>
 				<th>Quartier</th>
-				<th>Intéressé ?</th>
+			
 
 
 

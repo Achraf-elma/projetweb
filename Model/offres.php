@@ -27,7 +27,7 @@ function recupOffreDuMembre($pseudo){
   #Données: idquestion, identifiant de la question(ou groupe de proposition)
   #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
   require_once("pdo.php");
-
+ echo "yes";
   $bd= connexion();
   $answer = $bd->query("SELECT idoffre,prix, quantiteVaisselle,commentaire, pseudo, nomVille , nomQuartier FROM offre, quartier, membre, ville WHERE membre.idville = ville.idville AND membre.idquartier = quartier.idquartier AND offre.idmembre = membre.idmembre AND pseudo = '$pseudo';  ");
   return $answer;

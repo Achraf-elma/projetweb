@@ -47,9 +47,12 @@ else
 
 
 
-<p>  Offre en cours : </p>
- <?php require_once("offreencours.php"); ?>
+<h3>  Offre en cours : </h3>
+ <?php include_once("offreencours.php"); ?>
 
+
+<h3>  Liste des Commentaires laissés : </h3>
+    <?php include_once("commentaire.php"); ?>
 </body>
 
 <?php
