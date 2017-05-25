@@ -31,7 +31,7 @@
 	}
 
 
-	function existePseudo($idmembre_juge, $pseudo)
+	function existeEval($idmembre_juge, $pseudo)
  #Donnée: pseudo
  #Résultat: Renvoie le membre dont le pseudo est la chaine de char donnée en paramètre sinon renvoie un vide
  {

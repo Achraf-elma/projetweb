@@ -6,7 +6,8 @@
 		$commentaire=$_POST['commentaire'];
     $pseudo = $_POST['pseudo'];
 
-		if (isset($note) )
+  $existeEval=existeEval($_COOKIE[id], $pseudo);
+		if (!isset($note) )
 		{
 			header("Location: ../erreur.php?message=Precisez_une_note_svp");
 
@@ -14,7 +15,7 @@
 		else if ($_COOKIE[id]==$pseudo) {
 			  header("Location: ../erreur.php?message=Vous_ne_pouvez_pas_donner_votre_avis_sur_vous_meme");
 		}
-		else if ($_COOKIE[id]==$pseudo) {
+		else if ($existe=existeMail($email);) {
 			  header("Location: ../erreur.php?message=Vous_avez_deja_noté_ce_membre");
 		}
 		else
