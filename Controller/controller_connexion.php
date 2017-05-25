@@ -15,12 +15,12 @@
 			$idmembre = recupIdMembre($pseudo);
 
        if($pseudo === "Admin") {
-				 setcookie("id", 0, time()+(3600),"/");
+				 setcookie("id", "0", time()+(3600),"/");
 			 }
 			 else {
 				 setcookie("id", $idmembre, time()+(3600),"/");
 			 }
-   echo $_COOKIE[id];
+          echo $_COOKIE[id];
 		//  header("Location: ../validation.php?message=Vous_etes_bien_connecte");
 		}
 		else
