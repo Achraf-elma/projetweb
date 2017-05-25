@@ -15,7 +15,7 @@
 			$idmembre = recupIdMembre($pseudo);
 
        if($pseudo === "Admin") {
-				 setcookie("id", "0", time()+(3600),"/");
+				 setcookie("id", "admin", time()+(3600),"/");
 			 }
 			 else {
 				 setcookie("id", $idmembre, time()+(3600),"/");
