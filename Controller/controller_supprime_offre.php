@@ -1,7 +1,7 @@
 <?php
 
-
-require_once("Model/offre.php");
+echo "yeay";
+require_once("../Model/offre.php");
 require_once("Model/membre.php");
 echo "yeay";
 $idprofil= recupIdMembre($pseudo);
