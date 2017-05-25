@@ -17,7 +17,7 @@
 	<tbody>
 
 <?php
-
+   require_once("Model/offres.php");
     $answer = recupOffreDuMembre($membre['pseudo']);
 		while($donnees = $answer->fetch())
 		{
