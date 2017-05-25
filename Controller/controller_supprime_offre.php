@@ -1,9 +1,9 @@
 <?php
 
-echo "yeay";
+
 require_once("Model/membre.php");
-echo "yeay21";
-require_once("Model/offre.php");
+
+require_once("Model/offres.php");
 echo "yeay21";
 $idprofil= recupIdMembre($pseudo);
 echo "yeay2";
