@@ -83,45 +83,24 @@ tr:nth-child(even){background-color: #f2f2f2; }
 */
 
 
-.buttonVaisselle {
-display: inline-block;
-border-radius: 10px;
-background-color: #f4511e;
-border: none;
-color: #FFFFFF;
-text-align: center;
-font-size: 28px;
-padding: 20px;
-width: 200px;
-transition: all 0.5s;
-cursor: pointer;
-margin: 5px;
+
+@media (max-width: 768px) {
+.btn-responsive {
+  padding:2px 4px;
+  font-size:80%;
+  line-height: 1;
+  border-radius:3px;
+}
 }
 
-.buttonVaisselle span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
+@media (min-width: 769px) and (max-width: 992px) {
+.btn-responsive {
+  padding:4px 9px;
+  font-size:90%;
+  line-height: 1.2;
+}
 }
 
-.buttonVaisselle span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-
-.buttonVaisselle:hover span {
-padding-right: 25px;
-}
-
-.buttonVaisselle:hover span:after {
-opacity: 1;
-right: 0;
-}
 
 .divButton{
   margin-left: auto;
