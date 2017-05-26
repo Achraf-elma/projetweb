@@ -7,7 +7,7 @@
   <body>
 
 <div  style="overflow-x:auto;" class=contenu>
-    <h1>  Liste des Vaisselles en attente de plongeur </h1>
+    <h2>  Liste des Vaisselles en attente de plongeur </h2>
 
 
 <table>
