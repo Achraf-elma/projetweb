@@ -194,15 +194,15 @@ ul.topnav li.center {float: center;}
 
 footer
 {
-	 /* "Coller" le footer en bas de la page, attention toute la page doit être utilisée pour que sa fonctionne */
-	
+	bottom: :0; /* "Coller" le footer en bas de la page, attention toute la page doit être utilisée pour que sa fonctionne */
+	width: 100%;
 	background-color: #696969;
 
 	text-align: center; /* Centre le texte */
-	/*padding-top: 50px; */
+	padding-top: 50px;
 	color: white;
   display : table-row;
-	height: 50px;
+	height: 100px;
 }
 
 footer a
@@ -210,7 +210,7 @@ footer a
 	text-decoration: none;
 	color: #FFD700;
 }
-
+* {-moz-box-sizing: border-box; box-sizing: border-box;}
 
 a{
 color:green;
