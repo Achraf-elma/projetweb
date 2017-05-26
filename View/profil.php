@@ -22,14 +22,20 @@
         afficher_cacher('texte');
     //-->
     </script>
+
+
 <h3> Description </h3>
-<p> Habite à <?php echo $membre['nomville']; ?> <br>
-A propos de moi : "<?php echo $membre['description']; ?> "
+<p>
+Habite à <?php echo $membre['nomville']; ?> <br>
+A propos de moi : <br> "<?php echo $membre['description']; ?> " <
 
 </p>
+
 <h3> Evaluation </h3>
 Avis : Positif : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membre['neutre']; ?>  Négatif : <?php echo $membre['negatif']; ?> <br>
 <?php echo $membre['pseudo']; ?>
+
+
 
 <?php
 if (isset($_COOKIE['id']))
@@ -51,7 +57,7 @@ else
 
 
 <h3>  Liste des Commentaires laissés : </h3>
-    <?php include_once("commentaire.php"); ?>
+<?php include_once("commentaire.php"); ?>
 
 </div>
 </body>
