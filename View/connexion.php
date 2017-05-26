@@ -14,7 +14,7 @@
 
 			<input type="text" placeholder="Pseudo" name="id" required><br>
 			<input type="password" placeholder="Mot de passe" name="mdp" required><br><br>
-			<input class="btn btn-warning btn-responsive" type="submit" value="Connexion" >
+			<input class="btn btn-warning btn-responsive buttonVaisselle" type="submit" value="Connexion" >
       <button class="buttonVaisselle" href="inscription.php"> Inscription </button>
 		</form>
 
