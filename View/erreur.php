@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Erreur</title>
-				<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	</head>
-	<body>
+<?php
+    require_once("header.php");
+ ?>
 
-		<h1 class="title">Erreur</h1>
+<body>
+  <div class="contenu">
+		<h2>  <?php echo $message; ?>   </h2>
+    <a   class="buttonVaisselle" type="button"  href="index.php"> Retour à la page d'accueil</a>
+  </div>
+</body>
 
-		<p>  <?php echo $message ?>   </p>
-		<br>
 
-		<div style="text-align:center">
-		<a  class="buttonVaisselle" type="button"  href="javascript:history.back()"> Retour</a>
-		</div>
-
-	</body>
-</html>
+<?php
+	    require_once("footer.php");
+?>
