@@ -27,7 +27,7 @@
 																															   </select>
 				</label>
 							<fieldset>
-				  <label for="message"><span>Commentaire (MAX 50 caractères)</span><textarea name="message" pattern=".{,49}"  class="textarea-field"></textarea></label>																								 			 </select>
+				  <label for="message"><span>Commentaire (MAX 50 caractères)</span><textarea maxlength="49" name="message" pattern=".{,49}"  class="textarea-field"></textarea></label>																								 			 </select>
 	         		</fieldset>
 
 
