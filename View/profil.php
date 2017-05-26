@@ -27,7 +27,7 @@
 <h3> Description </h3>
 <p>
 Habite à <?php echo $membre['nomville']; ?> <br>
-A propos de moi : <br> "<?php echo $membre['description']; ?> 
+A propos de moi : <br> "<?php echo $membre['description']; ?>
 
 </p>
 
@@ -50,7 +50,7 @@ else
 
 
 
-
+</div>
 
 <h3>  Offre en cours : </h3>
  <?php include_once("offreencours.php"); ?>
@@ -59,7 +59,7 @@ else
 <h3>  Liste des Commentaires laissés : </h3>
 <?php include_once("commentaire.php"); ?>
 
-</div>
+
 </body>
 
 <?php
