@@ -8,7 +8,7 @@
 
 
  <h1> Profil de <?php echo $membre['pseudo']; ?> </h1>
-<div class=profil>
+<div class="profil contenu">
 
 
       <p> Habite à <?php echo $membre['nomville']; ?> </p>
