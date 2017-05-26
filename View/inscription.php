@@ -3,7 +3,7 @@
 	require_once("header.php");
 
 ?>
-<html>
+
   <body>
 
 
@@ -23,7 +23,7 @@
 	<input type="text" placeholder="Ville"  name="ville" required><br>
 	<input type="text" placeholder="Nom du quartier"  name="quartier" required><br>
 
-  <input type="submit" value="Connexion" class="connectionButton"><br>
+  <input class="buttonVaisselle" type="submit" value="Connexion" class="connectionButton"><br>
 
 
 </form>
@@ -32,7 +32,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="bootstrap-3/js/bootstrap.min.js"></script>
 		</body>
-</html>
+
 
 <?php
 
