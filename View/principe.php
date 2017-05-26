@@ -5,7 +5,7 @@
 <body>
   <div class="contenu" >
 
-    <img style="border:2px groove white;" src="./View/image/funny.jpg" width="100" >
+    <img style="border:2px groove white;" src="./View/image/funnys.jpg" width="100" >
   </div>
 </body>
 
