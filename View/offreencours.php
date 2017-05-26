@@ -8,9 +8,13 @@
 				<th> Commentaire</th>
 				<th>Ville</th>
 				<th>Quartier</th>
-				<?php if($_COOKIE['id']==$idp){
-				echo "<th> Supprimer </th>";
-				}?>
+				<?php   require_once("Model/offres.php");
+				 				require_once("Model/membre.php");
+				 				$idp= recupIdMembre($pseudo);
+
+				 if($_COOKIE['id']==$idp){
+					 	echo "<th> Supprimer </th>";
+					}?>
 
 
 
@@ -19,9 +23,7 @@
 	<tbody>
 
 <?php
-   require_once("Model/offres.php");
-	 require_once("Model/membre.php");
-	 $idp= recupIdMembre($pseudo);
+
     $answer = recupOffreDuMembre($membre['pseudo']);
 		while($donnees = $answer->fetch())
 		{
