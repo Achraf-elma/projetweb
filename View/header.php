@@ -37,7 +37,8 @@
       require_once("./Model/membre.php");
       $pseudo=recupPseudoMembre($_COOKIE['id']);
       echo '<li class="right"><a href="deconnexion.php">Deconnexion</a></li>';
-     echo '<li class="right"><a href="profil.php?id=Achraf">.$pseudo.</a></li>';
+      echo '<li class="right">';
+      echo "<a href='profil.php?id=$pseudo'></a></li>";
     }
     ?>
 
