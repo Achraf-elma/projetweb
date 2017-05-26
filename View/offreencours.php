@@ -13,7 +13,7 @@
 				 				$idp= recupIdMembre($pseudo);
 
 				 if($_COOKIE['id']==$idp){
-					 	echo "<th> Supprimer </th>";
+					 	echo $idp."<th> Supprimer </th>";
 					}?>
 
 
