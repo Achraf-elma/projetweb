@@ -90,7 +90,7 @@ tr:nth-child(even){background-color: #f2f2f2; }
 /*
     Style des boutons
 */
-
+/*
 @media (max-width: 1000px) {
 .btn-responsive {
   padding:2px 4px;
@@ -109,7 +109,7 @@ tr:nth-child(even){background-color: #f2f2f2; }
   background-color: #f4511e;
 }
 }
-
+*/
 
 .buttonVaisselle {
   display: inline-block;
