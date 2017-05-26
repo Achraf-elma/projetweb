@@ -4,7 +4,7 @@
 
  ?>
 
-<html>
+
 
 	<body>
     <div  class=contenu style="text-align:center; background: #4CAF50;" >
@@ -16,13 +16,13 @@
 			<input type="text" placeholder="Pseudo" name="id" required><br>
 			<input type="password" placeholder="Mot de passe" name="mdp" required><br><br>
 			<input class="btn btn-warning btn-responsive buttonVaisselle" type="submit" value="Connexion" >
-      <button class="buttonVaisselle" href="inscription.php"> Inscription </button>
+      <button class="buttonVaisselle" href="inscription"> Inscription </button>
 		</form>
 
 
   </div>
 	</body>
-</html>
+
 
 <?php
 

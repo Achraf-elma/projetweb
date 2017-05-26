@@ -13,8 +13,8 @@
 
     <div class ="divButton">
 
-        <button class="buttonVaisselle" onclick="javascript:location.href='offres.php'" ><span>Je fais la vaisselle d'un de mes voisins </span></button>
-        <button class="buttonVaisselle" onclick="javascript:location.href='votreannonce.php'"><span>Je cherche un voisin pour faire ma vaiselle</span></button>
+        <button class="buttonVaisselle" onclick="javascript:location.href='offres'" ><span>Je fais la vaisselle d'un de mes voisins </span></button>
+        <button class="buttonVaisselle" onclick="javascript:location.href='votreannonce'"><span>Je cherche un voisin pour faire ma vaiselle</span></button>
     </div>
 
   </body>

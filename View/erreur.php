@@ -5,7 +5,7 @@
 <body>
   <div class="contenu">
 		<h2>  <?php echo $message; ?>   </h2>
-    <a   class="buttonVaisselle" type="button"  href="index.php"> Retour à la page d'accueil</a>
+    <a   class="buttonVaisselle" type="button"  href="javascript:history.back()"> Retour</a>
   </div>
 </body>
 
