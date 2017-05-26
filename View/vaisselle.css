@@ -81,7 +81,7 @@ tr:nth-child(even){background-color: #f2f2f2; }
 .contenu {
 
    width: 80%;
-   height: 100%;
+   height: auto;
      text-align: center;
    margin-right:auto;
    margin-left:auto;
@@ -201,7 +201,7 @@ footer
 	width: 100%;
 	background-color: #696969;
    position: absolute;
-   
+
 	text-align: center; /* Centre le texte */
 	padding-top: 50px;
 	color: white;
