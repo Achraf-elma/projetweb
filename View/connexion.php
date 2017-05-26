@@ -13,12 +13,12 @@
     <form method="post" action="../Controller/controller_connexion.php">
 
 			<input type="text" placeholder="Pseudo" name="id" required><br>
-			<input type="password" placeholder="Mot de passe" name="mdp" required><br>
-			<input class="buttonVaisselle" type="submit" value="Connexion" class="connectionButton">
-
+			<input type="password" placeholder="Mot de passe" name="mdp" required><br><br>
+			<input class="buttonVaisselle" type="submit" value="Connexion" >
+      <button class="buttonVaisselle" href="inscription.php"> Inscription </button>
 		</form>
 
-    <button class="buttonVaisselle" href="inscription.php"> Inscription </button>
+
   </div>
 	</body>
 </html>

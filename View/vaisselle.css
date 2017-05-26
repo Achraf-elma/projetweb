@@ -13,6 +13,13 @@ body {
 h1{
 
      font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+ /* Pas de marge en bas pour coller le titre au paragraphe */
+  padding: 3%;       /* Sinon le titre a aussi un léger espacement à gauche : on veut l'aligner */
+                    /*   avec le paragraphe, qui n'a pas d'espacement. */
+  color: white;                /* Classique : couleur... */
+  font-size: : 20%; /* ... et police          */
+
 }
 .bouton
 {
