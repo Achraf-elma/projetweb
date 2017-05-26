@@ -4,7 +4,7 @@
 
     <form method="post" action="../Controller/controller_evaluation.php">
 
-    <h4>  Donnez votre avis sur ce membre : </h4> <br>
+    <h3>  Donnez votre avis sur ce membre : </h3> <br>
       <input type="radio" name= "note" value="POSITIVE"> Positif
       <input  type="radio" name="note" value="NEUTRE" > Neutre
       <input  type="radio" name="note" value="NEGATIF" > Négatif <br>

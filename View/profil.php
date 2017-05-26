@@ -33,7 +33,7 @@ A propos de moi : <br> "<?php echo $membre['description']; ?>
 
 <h3> Evaluation de <?php echo $membre['pseudo']; ?></h3>
 Avis : Positif : <?php echo $membre['positive']; ?>  Neutre : <?php echo $membre['neutre']; ?>  Négatif : <?php echo $membre['negatif']; ?> <br>
-
+<br> <br>
 
 
 
