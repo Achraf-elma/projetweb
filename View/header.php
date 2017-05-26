@@ -38,7 +38,7 @@
       $pseudo=recupPseudoMembre($_COOKIE['id']);
       echo '<li class="right"><a href="deconnexion.php">Deconnexion</a></li>';
       echo '<li class="right">';
-      echo "<a href='profil.php?id=$pseudo'></a></li>";
+      echo "<a href='profil.php?id=$pseudo'>Mon profil</a></li>";
     }
     ?>
 
