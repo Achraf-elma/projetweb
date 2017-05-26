@@ -22,9 +22,9 @@
   <ul class="topnav">
 
     <li><a class="active" href="index">Accueil</a></li>
-    <li><a href="principe.php">Le principe</a></li>
-    <li><a href="offres.php">Offre de Vaisselle</a></li>
-    <li><a href="votreannonce.php">Postez une annonce</a></li>
+    <li><a href="principe">Le principe</a></li>
+    <li><a href="offres">Offre de Vaisselle</a></li>
+    <li><a href="votreannonce">Postez une annonce</a></li>
 
    <?php
     if (!isset($_COOKIE['id']))
