@@ -208,9 +208,11 @@ footer
 	color: white;
   display : table-row;
  height: 100px;
-
+ margin-top: -1%;
 }
-
+* {
+margin: 0; /*les marges pourraient tout gâcher*/
+}
 footer a
 {
 	text-decoration: none;
