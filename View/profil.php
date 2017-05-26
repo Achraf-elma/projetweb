@@ -6,12 +6,11 @@
 
     <body>
 
-
- <h1> Profil de <?php echo $membre['pseudo']; ?> </h1>
 <div class="profil contenu">
+ <h1> Profil de <?php echo $membre['pseudo']; ?> </h1>
 
 
-      <p> Habite à <?php echo $membre['nomville']; ?> </p>
+
 
        <script type="text/javascript" src="./View/afficher_cacher_div.js"></script>
     <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le texte</span>
@@ -53,6 +52,8 @@ else
 
 <h3>  Liste des Commentaires laissés : </h3>
     <?php include_once("commentaire.php"); ?>
+
+</div>
 </body>
 
 <?php
