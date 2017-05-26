@@ -22,7 +22,7 @@
 				<th>Quartier</th>
 				<th>Intéressé ?</th>
 		<?php
-    if($_COOKIE['id'] =='0'){
+    if($_COOKIE['id'] =='1'){
 			echo "<th> Supprimer </th>";
 		}
      ?>
@@ -45,7 +45,7 @@
 			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
 			 <td> <?php echo 'Contactez <a href="../profil.php?id=' .$donnees["pseudo"] . '">' .$donnees["pseudo"] ."</a>"; ?>  </td>
 
-	 <?php  if($_COOKIE['id'] == '0') {
+	 <?php  if($_COOKIE['id'] == '1') {
 
 		 echo ' <td> <a href="../supprimer_offre.php?id=' .$donnees["pseudo"] . '" onclick="return confirm("Etes-vous sûr de supprimer?");> X </a> </td>';
 	 }?>
