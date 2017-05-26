@@ -1,10 +1,16 @@
 /*!
   Feuille de style du site
 */
+html{
+  height: 100%;
+	margin: 0;
+  padding: 0;
 
+}
 body {
     width: 100%;
     margin:0;
+    display : table;
     background-color: #c1e2cc;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
       /*Supprimer les marges par défault des navigateurs */
@@ -191,10 +197,12 @@ footer
 	bottom: :0; /* "Coller" le footer en bas de la page, attention toute la page doit être utilisée pour que sa fonctionne */
 	width: 100%;
 	background-color: #696969;
-	height: 70px;
+	
 	text-align: center; /* Centre le texte */
 	padding-top: 50px;
 	color: white;
+  display : table-row;
+	height: 100px;
 }
 
 footer a
