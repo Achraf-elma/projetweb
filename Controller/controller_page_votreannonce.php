@@ -6,6 +6,6 @@ if (isset($_COOKIE['id']))
 }
 else
 {
-	require_once("connexion");
+	require_once("connexion.php");
 }
 ?>
