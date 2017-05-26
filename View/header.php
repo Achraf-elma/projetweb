@@ -21,7 +21,7 @@
 
   <ul class="topnav">
 
-    <li><a class="active" href="index.php">Accueil</a></li>
+    <li><a class="active" href="index">Accueil</a></li>
     <li><a href="principe.php">Le principe</a></li>
     <li><a href="offres.php">Offre de Vaisselle</a></li>
     <li><a href="votreannonce.php">Postez une annonce</a></li>
