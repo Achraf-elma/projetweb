@@ -30,7 +30,7 @@
     if (!isset($_COOKIE['id']))
     {
 
-      echo '<li class="right"><a href="inscription" Inscription</a></li>
+      echo '<li class="right"><a href="inscription"> Inscription</a></li>
     <li class="right"><a href="connexion">Connexion</a></li>';
     }
     else {
