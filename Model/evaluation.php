@@ -3,8 +3,7 @@
 
 
 	function ajoutEval($idmembre_juge, $pseudo, $note, $commentaire)
-	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
-	#Post: ajoute l'étudiant à la base de données
+	#Post: ajoute l'évaluation a la bdd
 	{
 		require_once("../Model/pdo.php");
 		$bd = connexion();
@@ -49,8 +48,7 @@
 
 
  function recupEvalDuMembre($pseudo){
-   #Données: idquestion, identifiant de la question(ou groupe de proposition)
-   #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
+   #Resultats: Permet de récuperer toutes les evaluations du membre 
    require_once("Model/pdo.php");
 
    $bd= connexion();

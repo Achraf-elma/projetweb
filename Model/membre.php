@@ -17,7 +17,7 @@ CREATE TABLE membre(
 */
 
 function recupIdMembre($pseudo)
-#Donnée: nom de la membre
+#Donnée: pseudo du membre
 #Resultat: int correspondant a l'idMembre de la membre dont le nom est en parametre
 {
   require_once("pdo.php");
@@ -30,7 +30,7 @@ function recupIdMembre($pseudo)
 }
 
 function recupPseudoMembre($idmembre)
-#Donnée: nom de la membre
+#Donnée: id du membre
 #Resultat: pseudo
 {
   require_once("pdo.php");
@@ -43,7 +43,7 @@ function recupPseudoMembre($idmembre)
 }
 
 	function verifMdp($pseudo)
-	#Donnnée: Email de l'étudiant connecté
+	#Donnnée: pseudo du membre
 	#Résultat: Renvoie le mot de passe de l'étudiant
 	{
 			require_once("pdo.php");
@@ -57,8 +57,7 @@ function recupPseudoMembre($idmembre)
 	}
 
 	function ajoutMembre($pseudo, $email,$pass_hache,$telephone,$sexe,$nomVille,$nomQuartier)
-	#Donnée: Email (chaine de char) de l'étudiant, un mdp haché, nom(char) et prénom(char) de l'étudiant ainsi que sa promo (int = idPromo)
-	#Post: ajoute l'étudiant à la base de données
+	#Post: ajoute le membre à la base de données
 	{
 
 

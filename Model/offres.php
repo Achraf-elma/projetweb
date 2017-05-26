@@ -14,8 +14,7 @@ CREATE TABLE offre(
 
 
 function recupOffre(){
-  #Données: idquestion, identifiant de la question(ou groupe de proposition)
-  #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
+  #Resultats: Permet de récuperer toutes les informations de la table de offre
   require_once("pdo.php");
 
   $bd= connexion();
@@ -24,8 +23,7 @@ function recupOffre(){
 }
 
 function recupOffreDuMembre($pseudo){
-  #Données: idquestion, identifiant de la question(ou groupe de proposition)
-  #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
+  #Resultats: Permet de récuperer toutes les informations de la table de offre concernant le membre passé en parametre.
   require_once("pdo.php");
   $bd= connexion();
   $answer = $bd->query("SELECT idoffre,prix, quantiteVaisselle,commentaire, pseudo, nomVille , nomQuartier FROM offre, quartier, membre, ville WHERE membre.idville = ville.idville AND membre.idquartier = quartier.idquartier AND offre.idmembre = membre.idmembre AND pseudo = '$pseudo';  ");
@@ -34,8 +32,8 @@ function recupOffreDuMembre($pseudo){
 
 
 function supprimeOffreDuMembre($idmembre){
-  #Données: idquestion, identifiant de la question(ou groupe de proposition)
-  #Resultats: Permet de récuperer toutes les informations de la table de reponse concernant la question passée en parametre.
+  #Données: idmembre
+  #Resultats: Permet de récuperer toutes les informations de la table de offre concernant le membre passé en parametre.
   require_once("pdo.php");
   $bd= connexion();
   $bd->exec(" DELETE FROM OFFRE WHERE idmembre = '$idmembre' ;");
@@ -67,18 +65,5 @@ function OffreDuMembre($idmembre){
           return $offre;
      }
 
-
-
-  /*
-function modifieReponse($nouveauLibelle,$idRep,$idQuestion){
-  #Données: nouveau Libelle un string, idRep l'identifiant de la reponse et idQuestion l'identifiant de la question (ou groupe)
-  #Resultats : Modifie la base de donnée. Permet de modifier le libellé de la reponse par le nouveau libellé passé en parametre
-  require_once("pdo.php");
-  $bd= connexion();
-
-  $bd->exec("UPDATE reponse SET libelle_rep ='".$nouveauLibelle."' WHERE idQuestion ='".$idQuestion."'  AND idR ='".$idRep."'");
-
-}
- */
 
 ?>
