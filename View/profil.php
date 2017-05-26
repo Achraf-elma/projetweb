@@ -6,7 +6,7 @@
 
     <body>
 
-<div class="profil contenu">
+<div class="profil contenu" style="background: #4CAF50; color:white;">
  <h1> Profil de <?php echo $membre['pseudo']; ?> </h1>
 
 
@@ -27,7 +27,7 @@
 <h3> Description </h3>
 <p>
 Habite à <?php echo $membre['nomville']; ?> <br>
-A propos de moi : <br> "<?php echo $membre['description']; ?> " <
+A propos de moi : <br> "<?php echo $membre['description']; ?> 
 
 </p>
 
