@@ -197,8 +197,17 @@ ul.topnav li.center {float: center;}
 
 footer
 {
-  height: 50px; /*pour ajuster l'hauteur du pied de page*/
-  margin-top: -50px;/*ces chiffres doivent être opposés*/
+	bottom: :0; /* "Coller" le footer en bas de la page, attention toute la page doit être utilisée pour que sa fonctionne */
+	width: 100%;
+	background-color: #696969;
+   position: absolute;
+   
+	text-align: center; /* Centre le texte */
+	padding-top: 50px;
+	color: white;
+  display : table-row;
+ height: 50%;
+ margin-top: -1%;
 }
 * {
 margin: 0; /*les marges pourraient tout gâcher*/
