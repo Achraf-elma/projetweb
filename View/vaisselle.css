@@ -81,6 +81,7 @@ tr:nth-child(even){background-color: #f2f2f2; }
 .contenu {
 
    width: 80%;
+   height: 100%;
      text-align: center;
    margin-right:auto;
    margin-left:auto;
@@ -206,7 +207,8 @@ footer
 	padding-top: 50px;
 	color: white;
   display : table-row;
-	height: 100px;
+ height: 100px;
+
 }
 
 footer a
