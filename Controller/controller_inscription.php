@@ -22,11 +22,11 @@
 
 		if (empty($pseudo) || empty($email) || empty($mdp) || empty($sexe))
 		{
-			header("Location: ../erreur.php?message=Merci_de_complèter_tous_vos_champs");
+			header("Location: ../erreur?message=Merci_de_complèter_tous_vos_champs");
 		}
 		elseif (!is_null($existemail['email']) || !is_null($existpseudo['pseudo']) )
 		{
-			header("Location: ../erreur.php?message=Ce_pseudo_ou_ce_mail_est_déjà_associé_à_un_compte");
+			header("Location: ../erreur?message=Ce_pseudo_ou_ce_mail_est_déjà_associé_à_un_compte");
 		}
 		else
 		{
@@ -43,7 +43,7 @@
 			 setcookie("id", $idmembre, time()+(3600),"/");
 
 			}
-			header("Location: ../validation.php?message=Inscription_réussie");
+			header("Location: ../validation?message=Inscription_réussie");
 		}
 
 ?>

@@ -9,18 +9,18 @@
 
     if (empty($prix) || !is_numeric($prix) )
 		{
-			header("Location: ../erreur.php?message=Merci_de_renseigner_un_prix_correct");
+			header("Location: ../erreur?message=Merci_de_renseigner_un_prix_correct");
 		}
     elseif ( !is_null($existeOffreDuMembre['idmembre']) )
     {
 
-      header("Location: ../erreur.php?message=Vous_avez_deja_une_annonce_en_cours");
+      header("Location: ../erreur?message=Vous_avez_deja_une_annonce_en_cours");
     }
 		else
 		{
       $id = $_COOKIE['id'];
 			creerOffre($prix,$quantite,$id,$commentaire);
-      header("Location: ../validation.php?message=Votre_annonce_est_postée");
+      header("Location: ../validation?message=Votre_annonce_est_postée");
 		}
 
  ?>

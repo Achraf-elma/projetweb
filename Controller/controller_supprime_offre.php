@@ -7,6 +7,6 @@
 
     $idprofil= recupIdMembre($pseudo);
     supprimeOffreDuMembre($idprofil);
-    header("Location: ../validation.php?message=Vous_avez_bien_supprimé_cette_offre");
+    header("Location: ../validation?message=Vous_avez_bien_supprimé_cette_offre");
 
 ?>
