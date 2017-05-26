@@ -9,7 +9,7 @@
 	<body>
     <div  class=contenu style="text-align:center; background: #4CAF50;" >
 		<h1>Connexion</h1>
-    <span style="color:white">Veuillez vous connecter. </span> <br>
+    <span style="color:white">Veuillez vous connecter </span> <br>
 
     <form method="post" action="../Controller/controller_connexion.php">
 
