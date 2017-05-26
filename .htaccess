@@ -1,4 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine On
 RewriteRule "^profil/(.*)$" "/profil.php?id=$1" [B,PT]
-RewriteRule ^index$ index.php [L] 
+RewriteRule ^index$ index.php [L]
+RewriteRule ^votreannonce$ votreannonce.php [L]
+RewriteRule ^erreur$ erreur.php [L] 
