@@ -13,17 +13,17 @@
 
 		       if($pseudo === "Admin") { /* connexion admin */
 						 setcookie("id", 1, time()+(3600),"/");
-						 header("Location: ../validation.php?message=Vous_êtes_bien_connecté_en_tant_que_Admin");
+						 header("Location: ../validation?message=Vous_êtes_bien_connecté_en_tant_que_Admin");
 					 }
 					 else {
 						 setcookie("id", $idmembre, time()+(3600),"/");
-						 header("Location: ../validation.php?message=Vous_êtes_bien_connecté");
+						 header("Location: ../validation?message=Vous_êtes_bien_connecté");
 					 }
 
 		}
 		else
 		{
-			header("Location: ../erreur.php?message=Mot_de_passe_ou_pseudo_érroné");
+			header("Location: ../erreur?message=Mot_de_passe_ou_pseudo_érroné");
 		}
 
 ?>
