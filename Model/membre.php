@@ -25,8 +25,20 @@ function recupIdMembre($pseudo)
 
   $result = $bd->query("SELECT idmembre FROM membre WHERE pseudo ='".$pseudo."'");
   $idMembre=$result->fetch();
-  
+
   return $idMembre["idmembre"];
+}
+
+function recupPseudoMembre($idmembre)
+#Donnée: nom de la membre
+#Resultat: pseudo 
+  require_once("pdo.php");
+  $bd= connexion();
+
+  $result = $bd->query("SELECT pseudo FROM membre WHERE idmembre ='".$idmembre."'");
+  $idMembre=$result->fetch();
+
+  return $idMembre["pseudo"];
 }
 
 	function verifMdp($pseudo)
