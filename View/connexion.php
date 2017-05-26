@@ -14,11 +14,11 @@
 
 			<input type="text" placeholder="Pseudo" name="id" required><br>
 			<input type="password" placeholder="Mot de passe" name="mdp" required><br>
-			<input  class="buttonVaisselle" type="submit" value="Connexion" class="connectionButton"><br>
+			<input class="buttonVaisselle" type="submit" value="Connexion" class="connectionButton">
 
 		</form>
 
-    <button class="buttonVaisselle" href="inscription"> Inscription </button>
+    <button class="buttonVaisselle" href="inscription.php"> Inscription </button>
   </div>
 	</body>
 </html>
