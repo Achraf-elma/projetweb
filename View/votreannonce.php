@@ -14,7 +14,7 @@
 		    <h3>Postez votre annonce</h3>
 		    <h4>Par un soucis d'hygiene une annonce est mise en ligne seulement 48H au dela vous devriez peut etre penser a faire votre propre vaisselle.</h4>
 
-		
+
 		 </fieldset>
 		  <fieldset><legend>Annonce</legend>
 			  <label for="Prix"><span>Prix *</span>
@@ -23,7 +23,7 @@
 			 	<label for="Quantite"><span>Quantite de Vaisselle </span><select name="quantite" class="select-field">
 									 			 																				<option value="Grosse">Grosse</option>
 									 			 																				<option value="Moyenne">Moyenne</option>
-									 			 																				<option value="Petite">Petite</option>
+									 			 																				<option value="Petit">Petite</option>
 																															   </select>
 				</label>
 							<fieldset>
