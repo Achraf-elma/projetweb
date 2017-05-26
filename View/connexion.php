@@ -18,7 +18,7 @@
 			<input class="btn btn-warning btn-responsive buttonVaisselle" type="submit" value="Connexion" >
 
 		</form>
-        <button class="buttonVaisselle" href="inscription"> Inscription </button>
+        <button class="buttonVaisselle"  onclick="javascript:location.href='inscription'"> Inscription </button>
 
   </div>
 	</body>
