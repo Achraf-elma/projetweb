@@ -10,7 +10,7 @@
 				<th>Quartier</th>
 				<?php   require_once("Model/offres.php");
 				 				require_once("Model/membre.php");
-				 				$idp= recupIdMembre($pseudo);
+				 				$idp= recupIdMembre($membre['pseudo']);
 
 				 if($_COOKIE['id']==$idp){
 					 	echo $idp."<th> Supprimer </th>";

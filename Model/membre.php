@@ -33,7 +33,7 @@ function recupPseudoMembre($idmembre)
 #Donnée: nom de la membre
 #Resultat: pseudo
 {
-  require_once("../Model/pdo.php");
+  require_once("pdo.php");
   $bd= connexion();
 
   $result = $bd->query("SELECT pseudo FROM membre WHERE idmembre ='".$idmembre."'");
