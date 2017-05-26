@@ -7,7 +7,7 @@
   <body>
 
 
-<div style="text-align:center; background: #4CAF50;">
+<div class=content style="text-align:center; background: #4CAF50;">
 	<h1>Inscription</h1>
 <form method="post" action="/Controller/controller_inscription.php">
 
