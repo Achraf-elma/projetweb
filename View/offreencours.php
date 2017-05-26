@@ -8,7 +8,7 @@
 				<th> Commentaire</th>
 				<th>Ville</th>
 				<th>Quartier</th>
-				<?php if($_COOKIE[id]==$idp){
+				<?php if($_COOKIE['id']==$idp){
 				echo "<th> Supprimer </th>";
 				}?>
 
@@ -34,7 +34,7 @@
 			 <td> <?php echo $donnees["commentaire"]; ?>  </td>
 			 <td> <?php echo $donnees["nomville"]; ?>  </td>
 			 <td> <?php echo $donnees["nomquartier"]; ?>  </td>
-			 <?php if($_COOKIE[id]==$idp){
+			 <?php if($_COOKIE['id']==$idp){
 				 echo ' <td> <a href="../supprimer_offre.php?id=' .$donnees["pseudo"] . '" onclick="return confirm("Etes-vous sûr de supprimer?");> X </a> </td>';
 			 }?>
 
