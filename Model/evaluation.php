@@ -20,7 +20,7 @@
         break;
 
         case 'Neutre':
-        $bd->exec("UPDATE profil SET neutre = neutre + 1 WHERE idmembre ='". $idprofil_evalue ."' ");      break;
+        $bd->exec("UPDATE profil SET neutre = neutre + 1 WHERE idmembre ='". $idprofil_evalue ."' ");     
         break;
 
         case 'Negatif':
